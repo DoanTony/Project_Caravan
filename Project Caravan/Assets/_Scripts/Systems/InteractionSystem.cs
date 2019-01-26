@@ -18,14 +18,11 @@ public class InteractionSystem : ComponentSystem
     {
         for (int i = 0; i < _Characters.Length; i++)
         {
-            if (_Characters.Character[i].runtimeSet.activeCharacter == _Characters.Character[i])
-            {
-                ScanForInteractable(i); 
+            ScanForInteractable(i);
 
-                if (_Characters.Interaction[i].interactable != null)
-                {
-                    _Characters.Interaction[i].interactable.Interact();
-                }
+            if (_Characters.Interaction[i].interactable != null)
+            {
+                _Characters.Interaction[i].interactable.Interact();
             }
         }
     }
