@@ -2,6 +2,8 @@
 using UnityEditor;
 using System.Collections.Generic;
 using Sirenix.OdinInspector;
+using SnowtailTools.Utilities;
+using System.Linq;
 
 [CreateAssetMenu(fileName = "Localization Collection", menuName = "Localization/Collection", order = 2)]
 public class LocalizationBox : SerializedScriptableObject
@@ -13,12 +15,40 @@ public class LocalizationBox : SerializedScriptableObject
     [Space]
 
     #region Private variables
-    [SerializeField] private Dictionary<string, string> localizedText = new Dictionary<string, string>();
+    [SerializeField] [ReadOnly] private Dictionary<string, string> localizedText = new Dictionary<string, string>();
     [Space]
     private string LOCALIZATION_MANAGER_STRING = "LocalizationManager";
     #endregion
 
-    #region Functions()
+#if UNITY_EDITOR
+
+    #region DEBUGGER
+
+    [Title("Debug")]
+    [ValueDropdown("keys")] public string key;
+    private string[] keys;
+    [Button("Debug Dialogue (Console)", ButtonSizes.Large)]
+    public void DebugShowDialog()
+    {
+        if (!Validation.ValidateField<string>(key, "Please select a key"))
+            return;
+
+        Debug.Log(localizedText[key]);
+    }
+
+    [Button("Debug Dialogue (Play Mode)", ButtonSizes.Large)]
+    public void DebugShowDialogPlayMode()
+    {
+        if (!Validation.ValidateField<string>(key, "Please select a key"))
+            return;
+
+        ShowDialogue(key);
+    }
+
+    #endregion
+
+    #region FUNCTIONALITIES
+    [Title("Functionalities")]
     [Button(ButtonSizes.Gigantic , ButtonStyle.CompactBox)]
     public void FetchLocalizedText()
     {
@@ -30,24 +60,25 @@ public class LocalizationBox : SerializedScriptableObject
         lm.LoadEditorKeys(fileName);
         lm.LoadLocalizedText(fileName);
         localizedText = lm.GetLocalizedTexts();
+        keys = localizedText.Keys.ToArray();
     }
-
+    [Button(ButtonSizes.Medium, ButtonStyle.CompactBox)]
     public void ClearLists()
     {
         localizedText.Clear();
-    }
-
-    public void CallDialiogue(int _index)
-    {
-        //LocalizedText.instance.SetDialogue(selectedKeys[_index - 1], fileName);
+        keys = null;
     }
 
     public void ShowDialogue(string _key)
     {
-        LocalizedText.instance.ShowDialogue(localizedText[_key]);
+        if (Validation.ValidateField<LocalizedText>(LocalizedText.instance, "Please add an instance of localized text and be on <i>PLAY MODE</i>"))
+        {
+            LocalizedText.instance.ShowDialogue(localizedText[_key]);
+        }
     }
-
     #endregion
+
+#endif
 
     #region Getters
 

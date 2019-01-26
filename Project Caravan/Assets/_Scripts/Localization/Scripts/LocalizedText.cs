@@ -1,12 +1,13 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 using System.Collections;
+using TMPro;
 
 public class LocalizedText : MonoBehaviour
 {
     public static LocalizedText instance;
     public LocalizationManager localizationManager;
-    Text text;
+    TextMeshProUGUI text;
     private void Awake()
     {
         InitializeSingleton();
@@ -29,7 +30,7 @@ public class LocalizedText : MonoBehaviour
 
     private void Start()
     {
-        text = GetComponent<Text>();
+        text = GetComponent<TextMeshProUGUI>();
         text.text = "";
     }
 

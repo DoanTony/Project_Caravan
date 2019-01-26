@@ -12,7 +12,7 @@ public class InteractionComponent : Interaction
     {
         if (showRaycast)
         {
-            Debug.DrawRay(transform.position, transform.forward.normalized * range, Color.blue);
+            Debug.DrawRay(transform.position, transform.right.normalized * range, Color.blue);
         }
     }
 }
