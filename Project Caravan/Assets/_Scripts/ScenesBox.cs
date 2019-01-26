@@ -1,10 +1,12 @@
-﻿using System.Collections;
+﻿#if UNITY_EDITOR
+using System.Collections;
 using System.Collections.Generic;
 using UnityEditor;
 using UnityEditor.SceneManagement;
 using UnityEngine.SceneManagement;
 using UnityEngine;
 
+[ExecuteInEditMode]
 public class ScenesBox : MonoBehaviour {
     public List<SceneAsset> scenes = new List<SceneAsset>();
 
@@ -19,6 +21,7 @@ public class ScenesBox : MonoBehaviour {
       //  LoadScenes();
     }
 
+    [ContextMenu("Load Scenes")]
     private void LoadScenes()
     {
         if (EditorApplication.isPlaying)
@@ -41,3 +44,4 @@ public class ScenesBox : MonoBehaviour {
         yield break;
     }
 }
+#endif

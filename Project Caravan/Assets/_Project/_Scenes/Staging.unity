@@ -203,6 +203,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 128399432}
+  - component: {fileID: 128399433}
   m_Layer: 0
   m_Name: SceneBox
   m_TagString: Untagged
@@ -224,6 +225,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &128399433
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 128399431}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59b5ac07e5d3d61419e02dd4ca7e5a5c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scenes:
+  - {fileID: 102900000, guid: 2bd591c36b2dfdb4ead267f2b3b4d6b6, type: 3}
+  - {fileID: 102900000, guid: 41fb463877ede3d4581334b4e1df03f0, type: 3}
+  - {fileID: 102900000, guid: 131913aa03f6fbc48a055685fe613772, type: 3}
 --- !u!1 &568800073
 GameObject:
   m_ObjectHideFlags: 0
