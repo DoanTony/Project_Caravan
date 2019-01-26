@@ -8,6 +8,7 @@ public class GenericEvent : GameEvent
         for (int i = listeners.Count - 1; i >= 0; i--)
         {
             listeners[i].OnRaisedEvent();
+            Debug.Log("Event raised");
         }
     }
 }

@@ -14,11 +14,13 @@ GameObject:
   - component: {fileID: 7221020582821514872}
   - component: {fileID: 1094665380867171967}
   - component: {fileID: 3431142890778727673}
+  - component: {fileID: 3873769146078938442}
+  - component: {fileID: 5637905621014616080}
   - component: {fileID: 1094665380867171961}
   - component: {fileID: 1094665380867171904}
   m_Layer: 0
   m_Name: Character Prefab
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -105,6 +107,49 @@ MonoBehaviour:
   showRaycast: 1
   isInteracting: 0
   interactableInRange: 0
+  flipX: 1
+  forward: {x: 0, y: 0, z: 0}
+--- !u!114 &3873769146078938442
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1094665380867171960}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8121f2de83eaddf4d8c48ab1273df077, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &5637905621014616080
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1094665380867171960}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39afd18f2203287408870e27fd9f17cc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameEvent: {fileID: 11400000, guid: f47811b7580d2b6478334565bc58cb9b, type: 2}
+  Response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 3873769146078938442}
+        m_MethodName: TeleportTarget
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Transform, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!136 &1094665380867171961
 CapsuleCollider:
   m_ObjectHideFlags: 0

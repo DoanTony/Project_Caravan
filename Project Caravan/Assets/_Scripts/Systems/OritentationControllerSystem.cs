@@ -9,6 +9,7 @@ public class OritentationControllerSystem : ComponentSystem
         public readonly int Length;
         public ComponentArray<SpriteController> SpriteController;
         public ComponentArray<CharacterController> CharacterController;
+        public ComponentArray<InteractionComponent> InteractionController;
     }
 
     [Inject] Characters CharactersData;
@@ -27,10 +28,12 @@ public class OritentationControllerSystem : ComponentSystem
             else if (CharactersData.CharacterController[i].horiziontal > 0)
             {
                 CharactersData.SpriteController[i].spriteRenderer.flipX = true;
+                CharactersData.InteractionController[i].flipX = 1;
             }
             else
             {
                 CharactersData.SpriteController[i].spriteRenderer.flipX = false;
+                CharactersData.InteractionController[i].flipX = -1;
             }
         }
     }

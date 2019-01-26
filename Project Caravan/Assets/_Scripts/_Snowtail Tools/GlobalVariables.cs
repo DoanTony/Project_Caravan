@@ -20,18 +20,11 @@ public class GlobalVariables {
     public static string INTERACTABLE_TAG = "Interactable";
     public static int INTERACTABLE_LAYER = LayerMask.NameToLayer("Interactable");
     public static int INSPECTABLE_LAYER = LayerMask.NameToLayer("Inpsectable");
-    public static int IGNORE_VISION_LAYER = LayerMask.NameToLayer("IgnoreVision");
-    public static int IGNORE_RAYCAST_LAYER = LayerMask.NameToLayer("IgnoreRaycast");
-    public static int CAMERA_HIDE_LAYER = LayerMask.NameToLayer("CameraHide");
-    public static int ROOM_LAYER = LayerMask.NameToLayer("Room");
-    public static int MOVEABLE_LAYER = LayerMask.NameToLayer("Moveable");
-    public static int LEVER_LAYER = LayerMask.NameToLayer("Lever");
 
     //Folder Access
     public static string RUNTIMESETS_PATH = "RuntimeSets/";
     public static string TOOL_EVENTS_PATH = "ToolsEvents/";
     public static string LOCALIZATION_PATH = "Localization/";
 
-    //RuntimeSet Path;
-    public static string CHARACTER_RUNTIMESET_PATH = RUNTIMESETS_PATH + "CharactersSet";
+
 }

@@ -63,7 +63,13 @@ public class InteractableObject : MonoBehaviour
         Vector3 offsetPosition = this.transform.position + Vector3.up * 3f;
         Gizmos.color = Color.green;
         Gizmos.DrawLine(this.transform.position, offsetPosition);
-        Gizmos.DrawIcon(offsetPosition, "interactable_editor_icon.png", true);
+
+        //Label 
+        GUIStyle _myStyle = new GUIStyle();
+        _myStyle.normal.textColor = Color.green;
+        _myStyle.fontStyle = FontStyle.Bold;
+        _myStyle.fontSize = 14;
+        Handles.Label(this.transform.position + Vector3.up * 4f, this.name, _myStyle);
     }
 
 

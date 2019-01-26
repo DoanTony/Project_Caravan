@@ -10,6 +10,7 @@ public class LocalizationBox : SerializedScriptableObject
 {
     #region Public Variables
     public string fileName;
+    public string characterName = "name";
     private LocalizationManager lm;
     #endregion
     [Space]
