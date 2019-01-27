@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 432a550dc31ff494a858ff5a57b85895, type: 3}
-  m_Name: dialogue_cav3_bareknight
+  m_Name: dialogue_eventC_captain_b1-2
   m_EditorClassIdentifier: 
   serializationData:
     SerializedFormat: 2
@@ -27,7 +27,7 @@ MonoBehaviour:
         mscorlib]], System
     - Name: 
       Entry: 12
-      Data: 3
+      Data: 2
     - Name: 
       Entry: 7
       Data: System.Collections.Generic.KeyValuePair`2[[System.String, mscorlib],[System.String,
@@ -37,7 +37,7 @@ MonoBehaviour:
       Data: 1
     - Name: 
       Entry: 1
-      Data: How dare thou wear pants in my presence!
+      Data: 'Did ye hear that laddie? '
     - Name: 
       Entry: 8
       Data: 
@@ -50,21 +50,7 @@ MonoBehaviour:
       Data: 2
     - Name: 
       Entry: 1
-      Data: Hast thou forgotten thy manners?
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: System.Collections.Generic.KeyValuePair`2[[System.String, mscorlib],[System.String,
-        mscorlib]], mscorlib
-    - Name: 
-      Entry: 1
-      Data: 3
-    - Name: 
-      Entry: 1
-      Data: "Home? I hast no home. I fight for the homes of the oppressed so they
-        may one day be free as a brave knight\u2019s naked thighs."
+      Data: "\u201CA real pirate\u201D he called me.."
     - Name: 
       Entry: 8
       Data: 
@@ -79,43 +65,7 @@ MonoBehaviour:
       Data: 1|AnswerQuestionDialogue[], Assembly-CSharp
     - Name: 
       Entry: 12
-      Data: 3
-    - Name: 
-      Entry: 7
-      Data: AnswerQuestionDialogue, Assembly-CSharp
-    - Name: answer
-      Entry: 6
-      Data: 
-    - Name: nextQueueDialogue
-      Entry: 6
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: AnswerQuestionDialogue, Assembly-CSharp
-    - Name: answer
-      Entry: 6
-      Data: 
-    - Name: nextQueueDialogue
-      Entry: 6
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: AnswerQuestionDialogue, Assembly-CSharp
-    - Name: answer
-      Entry: 6
-      Data: 
-    - Name: nextQueueDialogue
-      Entry: 6
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
+      Data: 0
     - Name: 
       Entry: 13
       Data: 
@@ -123,10 +73,10 @@ MonoBehaviour:
       Entry: 8
       Data: 
   fileName: 
-  characterName: Sir Bare Knight
-  isNextQueue: 0
-  nextQueue: {fileID: 0}
+  characterName: Captain
+  isNextQueue: 1
+  nextQueue: {fileID: 11400000, guid: 987dd7f4a8e2b404faea28e808f0cdda, type: 2}
   isAnswers: 0
   isEvent: 1
-  endDialogueEvent: {fileID: 11400000, guid: 5a24887b140422844a4cb16bf34c7e39, type: 2}
+  endDialogueEvent: {fileID: 11400000, guid: 7a6a034375addbe43b0c3eeaa40f0d8a, type: 2}
   key: 

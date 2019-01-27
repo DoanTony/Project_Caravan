@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 432a550dc31ff494a858ff5a57b85895, type: 3}
-  m_Name: dialogue_eventB_bareknight_b2-1
+  m_Name: dialogue_eventC_bandit_a1-1_START
   m_EditorClassIdentifier: 
   serializationData:
     SerializedFormat: 2
@@ -27,7 +27,7 @@ MonoBehaviour:
         mscorlib]], System
     - Name: 
       Entry: 12
-      Data: 2
+      Data: 1
     - Name: 
       Entry: 7
       Data: System.Collections.Generic.KeyValuePair`2[[System.String, mscorlib],[System.String,
@@ -37,20 +37,7 @@ MonoBehaviour:
       Data: 1
     - Name: 
       Entry: 1
-      Data: Thou hast proven yourself to be greedy and dishonorable!
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: System.Collections.Generic.KeyValuePair`2[[System.String, mscorlib],[System.String,
-        mscorlib]], mscorlib
-    - Name: 
-      Entry: 1
-      Data: 2
-    - Name: 
-      Entry: 1
-      Data: I shall therefore join you on your travels to fix thy broken morals
+      Data: Not another step, or I kill the boy!
     - Name: 
       Entry: 8
       Data: 
@@ -65,43 +52,7 @@ MonoBehaviour:
       Data: 1|AnswerQuestionDialogue[], Assembly-CSharp
     - Name: 
       Entry: 12
-      Data: 3
-    - Name: 
-      Entry: 7
-      Data: AnswerQuestionDialogue, Assembly-CSharp
-    - Name: answer
-      Entry: 6
-      Data: 
-    - Name: nextQueueDialogue
-      Entry: 6
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: AnswerQuestionDialogue, Assembly-CSharp
-    - Name: answer
-      Entry: 6
-      Data: 
-    - Name: nextQueueDialogue
-      Entry: 6
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: AnswerQuestionDialogue, Assembly-CSharp
-    - Name: answer
-      Entry: 6
-      Data: 
-    - Name: nextQueueDialogue
-      Entry: 6
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
+      Data: 0
     - Name: 
       Entry: 13
       Data: 
@@ -109,10 +60,10 @@ MonoBehaviour:
       Entry: 8
       Data: 
   fileName: 
-  characterName: Sir Bare Knight
-  isNextQueue: 0
-  nextQueue: {fileID: 0}
+  characterName: Bandit
+  isNextQueue: 1
+  nextQueue: {fileID: 11400000, guid: b4880b0bd60ff80419448591b4fcf24b, type: 2}
   isAnswers: 0
   isEvent: 1
-  endDialogueEvent: {fileID: 11400000, guid: 8c22e576ad8a07a4fab419f5405e2a5d, type: 2}
+  endDialogueEvent: {fileID: 11400000, guid: 1ef406a9d16d83a4f9d56cfe54b71255, type: 2}
   key: 

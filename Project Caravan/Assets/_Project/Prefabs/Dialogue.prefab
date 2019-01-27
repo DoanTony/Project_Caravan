@@ -439,7 +439,7 @@ MonoBehaviour:
   localizationManager: {fileID: 11400000, guid: 011940d991190214487a1121a85f4321,
     type: 2}
   background: {fileID: 1747057535900210830}
-  letterDelay: 0.03
+  letterDelay: 0.01
   answerButtons:
   - {fileID: 1747057536030208852}
   - {fileID: 4603632989492900923}
