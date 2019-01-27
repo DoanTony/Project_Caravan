@@ -10,15 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 432a550dc31ff494a858ff5a57b85895, type: 3}
-  m_Name: dialogue_eventD_merchant_b1
+  m_Name: dialogue_eventD_merchant_END
   m_EditorClassIdentifier: 
   serializationData:
     SerializedFormat: 2
     SerializedBytes: 
-    ReferencedUnityObjects:
-    - {fileID: 11400000, guid: a3dad219248864c4ea3929db66498314, type: 2}
-    - {fileID: 11400000, guid: dcadb0e7f35eb9f4ba2a5579bf89777f, type: 2}
-    - {fileID: 11400000, guid: f493bb8bcf144b043a07be20d36b2e13, type: 2}
+    ReferencedUnityObjects: []
     SerializedBytesString: 
     Prefab: {fileID: 0}
     PrefabModificationsReferencedUnityObjects: []
@@ -30,7 +27,7 @@ MonoBehaviour:
         mscorlib]], System
     - Name: 
       Entry: 12
-      Data: 2
+      Data: 1
     - Name: 
       Entry: 7
       Data: System.Collections.Generic.KeyValuePair`2[[System.String, mscorlib],[System.String,
@@ -40,20 +37,7 @@ MonoBehaviour:
       Data: 1
     - Name: 
       Entry: 1
-      Data: "Now why would i threaten such a tasty traveller\u2026"
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: System.Collections.Generic.KeyValuePair`2[[System.String, mscorlib],[System.String,
-        mscorlib]], mscorlib
-    - Name: 
-      Entry: 1
-      Data: 2
-    - Name: 
-      Entry: 1
-      Data: Buy something.
+      Data: But I do not know why you would purchase such a useless object.
     - Name: 
       Entry: 8
       Data: 
@@ -68,43 +52,7 @@ MonoBehaviour:
       Data: 1|AnswerQuestionDialogue[], Assembly-CSharp
     - Name: 
       Entry: 12
-      Data: 3
-    - Name: 
-      Entry: 7
-      Data: AnswerQuestionDialogue, Assembly-CSharp
-    - Name: answer
-      Entry: 1
-      Data: Buy eyepatch
-    - Name: nextQueueDialogue
-      Entry: 10
       Data: 0
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: AnswerQuestionDialogue, Assembly-CSharp
-    - Name: answer
-      Entry: 1
-      Data: Buy Fake ID
-    - Name: nextQueueDialogue
-      Entry: 10
-      Data: 1
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: AnswerQuestionDialogue, Assembly-CSharp
-    - Name: answer
-      Entry: 1
-      Data: Conveniently bear sized pants
-    - Name: nextQueueDialogue
-      Entry: 10
-      Data: 2
-    - Name: 
-      Entry: 8
-      Data: 
     - Name: 
       Entry: 13
       Data: 
@@ -115,7 +63,7 @@ MonoBehaviour:
   characterName: Merchant
   isNextQueue: 0
   nextQueue: {fileID: 0}
-  isAnswers: 1
+  isAnswers: 0
   isEvent: 0
   endDialogueEvent: {fileID: 0}
   key: 
