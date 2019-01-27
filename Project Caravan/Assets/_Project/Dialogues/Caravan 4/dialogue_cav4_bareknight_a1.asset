@@ -10,14 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 432a550dc31ff494a858ff5a57b85895, type: 3}
-  m_Name: dialogue_eventC_bandit_a1-2
+  m_Name: dialogue_cav4_bareknight_a1
   m_EditorClassIdentifier: 
   serializationData:
     SerializedFormat: 2
     SerializedBytes: 
-    ReferencedUnityObjects:
-    - {fileID: 11400000, guid: 3b901134ce6250349a98ca45e878b000, type: 2}
-    - {fileID: 11400000, guid: e26d7f4626ba0b840a33d699a5bd0ade, type: 2}
+    ReferencedUnityObjects: []
     SerializedBytesString: 
     Prefab: {fileID: 0}
     PrefabModificationsReferencedUnityObjects: []
@@ -29,7 +27,7 @@ MonoBehaviour:
         mscorlib]], System
     - Name: 
       Entry: 12
-      Data: 2
+      Data: 3
     - Name: 
       Entry: 7
       Data: System.Collections.Generic.KeyValuePair`2[[System.String, mscorlib],[System.String,
@@ -39,7 +37,7 @@ MonoBehaviour:
       Data: 1
     - Name: 
       Entry: 1
-      Data: 'ENOUGH!! '
+      Data: "What\u2019s this I hark about bandits?"
     - Name: 
       Entry: 8
       Data: 
@@ -52,7 +50,21 @@ MonoBehaviour:
       Data: 2
     - Name: 
       Entry: 1
-      Data: "Hand over the caravan or I\u2019ll do it. This is your last warning."
+      Data: All this ruckus reminds me of the time i defeated the knaves of blacksheep
+        cave.  There i stood  'i  victory. Pant-less
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: System.Collections.Generic.KeyValuePair`2[[System.String, mscorlib],[System.String,
+        mscorlib]], mscorlib
+    - Name: 
+      Entry: 1
+      Data: 3
+    - Name: 
+      Entry: 1
+      Data: The little one you saved from the bandit discourses in strange tongues.
     - Name: 
       Entry: 8
       Data: 
@@ -67,16 +79,16 @@ MonoBehaviour:
       Data: 1|AnswerQuestionDialogue[], Assembly-CSharp
     - Name: 
       Entry: 12
-      Data: 2
+      Data: 3
     - Name: 
       Entry: 7
       Data: AnswerQuestionDialogue, Assembly-CSharp
     - Name: answer
-      Entry: 1
-      Data: "I don\u2019t think the captain would be too happy about that. "
+      Entry: 6
+      Data: 
     - Name: nextQueueDialogue
-      Entry: 10
-      Data: 0
+      Entry: 6
+      Data: 
     - Name: 
       Entry: 8
       Data: 
@@ -84,11 +96,23 @@ MonoBehaviour:
       Entry: 7
       Data: AnswerQuestionDialogue, Assembly-CSharp
     - Name: answer
-      Entry: 1
-      Data: "I don\u2019t think the Bare Knight would be too happy about that"
+      Entry: 6
+      Data: 
     - Name: nextQueueDialogue
-      Entry: 10
-      Data: 1
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: AnswerQuestionDialogue, Assembly-CSharp
+    - Name: answer
+      Entry: 6
+      Data: 
+    - Name: nextQueueDialogue
+      Entry: 6
+      Data: 
     - Name: 
       Entry: 8
       Data: 
@@ -99,10 +123,10 @@ MonoBehaviour:
       Entry: 8
       Data: 
   fileName: 
-  characterName: Bandit
-  isNextQueue: 0
-  nextQueue: {fileID: 0}
-  isAnswers: 1
+  characterName: Sir Bare Knight
+  isNextQueue: 1
+  nextQueue: {fileID: 11400000, guid: 03d304dd189736541b4688ee8b3200b6, type: 2}
+  isAnswers: 0
   isEvent: 0
   endDialogueEvent: {fileID: 0}
   key: 
