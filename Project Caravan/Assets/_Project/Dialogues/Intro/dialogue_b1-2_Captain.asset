@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 432a550dc31ff494a858ff5a57b85895, type: 3}
-  m_Name: Localization Collection
+  m_Name: dialogue_b1-2_Captain
   m_EditorClassIdentifier: 
   serializationData:
     SerializedFormat: 2
@@ -21,45 +21,54 @@ MonoBehaviour:
     PrefabModificationsReferencedUnityObjects: []
     PrefabModifications: []
     SerializationNodes:
-    - Name: answerQuestions
+    - Name: localizedText
       Entry: 7
-      Data: 0|AnswerQuestionDialogue[], Assembly-CSharp
+      Data: 0|System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[System.String,
+        mscorlib]], mscorlib
+    - Name: comparer
+      Entry: 7
+      Data: 1|System.Collections.Generic.GenericEqualityComparer`1[[System.String,
+        mscorlib]], mscorlib
+    - Name: 
+      Entry: 8
+      Data: 
     - Name: 
       Entry: 12
       Data: 3
     - Name: 
       Entry: 7
-      Data: AnswerQuestionDialogue, Assembly-CSharp
-    - Name: answer
-      Entry: 6
       Data: 
-    - Name: nextQueueDialogue
-      Entry: 6
-      Data: 
+    - Name: 
+      Entry: 1
+      Data: 2
+    - Name: 
+      Entry: 1
+      Data: "Home is where me heart longs t\u2019 be."
     - Name: 
       Entry: 8
       Data: 
     - Name: 
       Entry: 7
-      Data: AnswerQuestionDialogue, Assembly-CSharp
-    - Name: answer
-      Entry: 6
       Data: 
-    - Name: nextQueueDialogue
-      Entry: 6
-      Data: 
+    - Name: 
+      Entry: 1
+      Data: 3
+    - Name: 
+      Entry: 1
+      Data: "What means home t\u2019 ye?"
     - Name: 
       Entry: 8
       Data: 
     - Name: 
       Entry: 7
-      Data: AnswerQuestionDialogue, Assembly-CSharp
-    - Name: answer
-      Entry: 6
       Data: 
-    - Name: nextQueueDialogue
-      Entry: 6
-      Data: 
+    - Name: 
+      Entry: 1
+      Data: 1
+    - Name: 
+      Entry: 1
+      Data: '''n ye''ve ne''er seen a million doubloons, so how do ye know ye wants
+        that?'
     - Name: 
       Entry: 8
       Data: 
@@ -69,17 +78,9 @@ MonoBehaviour:
     - Name: 
       Entry: 8
       Data: 
-    - Name: localizedText
+    - Name: answerQuestions
       Entry: 7
-      Data: 1|System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[System.String,
-        mscorlib]], mscorlib
-    - Name: comparer
-      Entry: 7
-      Data: 2|System.Collections.Generic.GenericEqualityComparer`1[[System.String,
-        mscorlib]], mscorlib
-    - Name: 
-      Entry: 8
-      Data: 
+      Data: 2|AnswerQuestionDialogue[], Assembly-CSharp
     - Name: 
       Entry: 12
       Data: 0
@@ -89,9 +90,11 @@ MonoBehaviour:
     - Name: 
       Entry: 8
       Data: 
-  fileName: 
-  characterName: name
+  fileName: interaction
+  characterName: Captain
   isNextQueue: 0
   nextQueue: {fileID: 0}
-  isAnswers: 1
-  key: 
+  isAnswers: 0
+  isEvent: 1
+  endDialogueEvent: {fileID: 11400000, guid: 5a24887b140422844a4cb16bf34c7e39, type: 2}
+  key: greeting
