@@ -377,6 +377,46 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3005576555117296620, guid: c6e1c03fe3331434f8f96b82627ba6a9,
+        type: 3}
+      propertyPath: simpleInteractable.response.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3005576555117296620, guid: c6e1c03fe3331434f8f96b82627ba6a9,
+        type: 3}
+      propertyPath: simpleInteractable.response.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: InitDialogue
+      objectReference: {fileID: 0}
+    - target: {fileID: 3005576555117296620, guid: c6e1c03fe3331434f8f96b82627ba6a9,
+        type: 3}
+      propertyPath: simpleInteractable.response.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 3005576555117296620, guid: c6e1c03fe3331434f8f96b82627ba6a9,
+        type: 3}
+      propertyPath: simpleInteractable.response.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3005576555117296620, guid: c6e1c03fe3331434f8f96b82627ba6a9,
+        type: 3}
+      propertyPath: simpleInteractable.response.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3005576555117296620, guid: c6e1c03fe3331434f8f96b82627ba6a9,
+        type: 3}
+      propertyPath: simpleInteractable.response.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 2096479580}
+    - target: {fileID: 3005576555117296620, guid: c6e1c03fe3331434f8f96b82627ba6a9,
+        type: 3}
+      propertyPath: simpleInteractable.response.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: SetActive
+      objectReference: {fileID: 0}
+    - target: {fileID: 3005576555117296620, guid: c6e1c03fe3331434f8f96b82627ba6a9,
+        type: 3}
+      propertyPath: simpleInteractable.response.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c6e1c03fe3331434f8f96b82627ba6a9, type: 3}
 --- !u!1 &700806278 stripped
@@ -651,3 +691,9 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2096479580 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2303970879332903840, guid: c6e1c03fe3331434f8f96b82627ba6a9,
+    type: 3}
+  m_PrefabInstance: {fileID: 700806277}
+  m_PrefabAsset: {fileID: 0}
