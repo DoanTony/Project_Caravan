@@ -6,6 +6,42 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
-    guid: 99c9720ab356a0642a771bea13969a05
+    path: Assets/_Project/_Scenes/Master.unity
+    guid: 16c2217e4bbbdd54fbee1d973e1c2172
+  - enabled: 1
+    path: Assets/_Project/_Scenes/Staging.unity
+    guid: 1ceb7116f1b33a844925bfa832db2720
+  - enabled: 1
+    path: Assets/_Project/_Scenes/Sub-Scenes/Audio.unity
+    guid: 41fb463877ede3d4581334b4e1df03f0
+  - enabled: 1
+    path: Assets/_Project/_Scenes/Sub-Scenes/Cameras.unity
+    guid: a747f600768471349b4f89f84635fb93
+  - enabled: 1
+    path: Assets/_Project/_Scenes/Sub-Scenes/Caravan.unity
+    guid: 2bd591c36b2dfdb4ead267f2b3b4d6b6
+  - enabled: 1
+    path: Assets/_Project/_Scenes/Sub-Scenes/Characters.unity
+    guid: 1313f0076561e464d862b73e0945905c
+  - enabled: 1
+    path: Assets/_Project/_Scenes/Sub-Scenes/Logic.unity
+    guid: 723d0520844e87a4f8e5b7c234381e06
+  - enabled: 1
+    path: Assets/_Project/_Scenes/Sub-Scenes/Technical Level.unity
+    guid: 92301996e1ee29c47b369324562d1d7e
+  - enabled: 1
+    path: Assets/_Project/_Scenes/Sub-Scenes/UI.unity
+    guid: 131913aa03f6fbc48a055685fe613772
+  - enabled: 1
+    path: Assets/_Project/_Scenes/Outdoors/Outdoor1.unity
+    guid: 9b09fa726a9483d4e8c0f4b3dd306919
+  - enabled: 1
+    path: Assets/_Project/_Scenes/Outdoors/Outdoor2.unity
+    guid: d2ad2f9c4ea0a0a418175fc9ad898096
+  - enabled: 1
+    path: Assets/_Project/_Scenes/Outdoors/Outdoor3.unity
+    guid: 903f1eeb956021e4e99498ff348bad04
+  - enabled: 1
+    path: Assets/_Project/_Scenes/Outdoors/Outdoor4.unity
+    guid: ac6be467aec3e7f42aa306ef51916fc1
   m_configObjects: {}

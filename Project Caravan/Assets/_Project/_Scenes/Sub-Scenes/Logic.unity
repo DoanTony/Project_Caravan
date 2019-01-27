@@ -112,7 +112,7 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &128399431
+--- !u!1 &446199611
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -120,51 +120,39 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 128399432}
-  - component: {fileID: 128399433}
+  - component: {fileID: 446199613}
+  - component: {fileID: 446199612}
   m_Layer: 0
-  m_Name: SceneBox
+  m_Name: ScenesManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &128399432
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 128399431}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &128399433
+--- !u!114 &446199612
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 128399431}
+  m_GameObject: {fileID: 446199611}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 59b5ac07e5d3d61419e02dd4ca7e5a5c, type: 3}
+  m_Script: {fileID: 11500000, guid: 543095b56d4c2f64f87acaa2200cbf55, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scenes:
-  - {fileID: 102900000, guid: 2bd591c36b2dfdb4ead267f2b3b4d6b6, type: 3}
-  - {fileID: 102900000, guid: a747f600768471349b4f89f84635fb93, type: 3}
-  - {fileID: 102900000, guid: 1313f0076561e464d862b73e0945905c, type: 3}
-  - {fileID: 102900000, guid: 92301996e1ee29c47b369324562d1d7e, type: 3}
-  - {fileID: 102900000, guid: 131913aa03f6fbc48a055685fe613772, type: 3}
-  - {fileID: 102900000, guid: 41fb463877ede3d4581334b4e1df03f0, type: 3}
-  - {fileID: 102900000, guid: 131913aa03f6fbc48a055685fe613772, type: 3}
-  - {fileID: 102900000, guid: 723d0520844e87a4f8e5b7c234381e06, type: 3}
-  - {fileID: 102900000, guid: 9b09fa726a9483d4e8c0f4b3dd306919, type: 3}
-  - {fileID: 102900000, guid: d2ad2f9c4ea0a0a418175fc9ad898096, type: 3}
-  - {fileID: 102900000, guid: 903f1eeb956021e4e99498ff348bad04, type: 3}
-  - {fileID: 102900000, guid: ac6be467aec3e7f42aa306ef51916fc1, type: 3}
+  currentOutdoorScene: 0
+--- !u!4 &446199613
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 446199611}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.4620986, y: 5.9985933, z: -2.2441387}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
