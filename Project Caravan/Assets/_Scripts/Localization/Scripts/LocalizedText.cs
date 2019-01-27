@@ -155,6 +155,10 @@ public class LocalizedText : SerializedMonoBehaviour
 
     public void AnswerQuestion(int _index)
     {
+        if (currentDialogue.endDialogueEvent != null)
+        {
+            currentDialogue.endDialogueEvent.Raise();
+        }
         InitDialogue(answerQuestionDialogues[_index].nextQueueDialogue);
     }
 
