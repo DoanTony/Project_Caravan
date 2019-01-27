@@ -420,7 +420,11 @@ PrefabInstance:
         type: 3}
       propertyPath: serializationData.Prefab
       value: 
-      objectReference: {fileID: 1747057536924946104, guid: 4f1c41999c5644e429e7a75ed1433b26,
+      objectReference: {fileID: 0}
+    - target: {fileID: 1747057536924946104, guid: 4f1c41999c5644e429e7a75ed1433b26,
         type: 3}
+      propertyPath: letterDelay
+      value: 0.005
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4f1c41999c5644e429e7a75ed1433b26, type: 3}
