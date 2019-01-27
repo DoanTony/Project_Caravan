@@ -23,39 +23,21 @@ MonoBehaviour:
     SerializationNodes:
     - Name: localizedText
       Entry: 7
-      Data: 0|System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[System.String,
-        mscorlib]], mscorlib
-    - Name: comparer
-      Entry: 7
-      Data: 1|System.Collections.Generic.GenericEqualityComparer`1[[System.String,
-        mscorlib]], mscorlib
-    - Name: 
-      Entry: 8
-      Data: 
+      Data: 0|System.Collections.Generic.SortedDictionary`2[[System.String, mscorlib],[System.String,
+        mscorlib]], System
     - Name: 
       Entry: 12
-      Data: 2
+      Data: 1
     - Name: 
       Entry: 7
-      Data: 
+      Data: System.Collections.Generic.KeyValuePair`2[[System.String, mscorlib],[System.String,
+        mscorlib]], mscorlib
     - Name: 
       Entry: 1
       Data: 1
     - Name: 
       Entry: 1
-      Data: "Wh...What??I was talkin\u2019 bout me ship laddy, not ye!!"
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: 
-      Entry: 1
-      Data: 2
-    - Name: 
-      Entry: 1
-      Data: HARHARHARHAR!
+      Data: "Aye...All travellers be tryin\u2019 t\u2019 find a way home."
     - Name: 
       Entry: 8
       Data: 
@@ -67,7 +49,7 @@ MonoBehaviour:
       Data: 
     - Name: answerQuestions
       Entry: 7
-      Data: 2|AnswerQuestionDialogue[], Assembly-CSharp
+      Data: 1|AnswerQuestionDialogue[], Assembly-CSharp
     - Name: 
       Entry: 12
       Data: 0
