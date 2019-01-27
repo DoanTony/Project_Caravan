@@ -133,7 +133,7 @@ public class LocalizedText : SerializedMonoBehaviour
 
     private IEnumerator TypeSentence(string _sentence)
     {
-        text.text = currentCharacter + ": ";
+        text.text = currentCharacter + ": \n ";
         foreach (Char letter in _sentence.ToCharArray())
         {
             text.text += letter;

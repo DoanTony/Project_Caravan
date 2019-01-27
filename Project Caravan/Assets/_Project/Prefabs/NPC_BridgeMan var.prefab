@@ -10,7 +10,7 @@ PrefabInstance:
     - target: {fileID: 1272227669342775517, guid: f72a3c07b3aaa9044a8f21b6c46e95b4,
         type: 3}
       propertyPath: m_Name
-      value: NPC Prefab
+      value: NPC_BridgeMan var
       objectReference: {fileID: 0}
     - target: {fileID: 5673557376400479798, guid: f72a3c07b3aaa9044a8f21b6c46e95b4,
         type: 3}
@@ -67,5 +67,57 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5802551837629228676, guid: f72a3c07b3aaa9044a8f21b6c46e95b4,
+        type: 3}
+      propertyPath: simpleInteractable.response.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5802551837629228676, guid: f72a3c07b3aaa9044a8f21b6c46e95b4,
+        type: 3}
+      propertyPath: simpleInteractable.response.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 11400000, guid: 6dc9a7d366c1123479bc88fad6cdced8,
+        type: 2}
+    - target: {fileID: 5802551837629228676, guid: f72a3c07b3aaa9044a8f21b6c46e95b4,
+        type: 3}
+      propertyPath: simpleInteractable.response.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: InitDialogue
+      objectReference: {fileID: 0}
+    - target: {fileID: 5802551837629228676, guid: f72a3c07b3aaa9044a8f21b6c46e95b4,
+        type: 3}
+      propertyPath: simpleInteractable.response.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 5802551837629228676, guid: f72a3c07b3aaa9044a8f21b6c46e95b4,
+        type: 3}
+      propertyPath: simpleInteractable.response.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 5802551837629228676, guid: f72a3c07b3aaa9044a8f21b6c46e95b4,
+        type: 3}
+      propertyPath: simpleInteractable.response.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5802551837629228676, guid: f72a3c07b3aaa9044a8f21b6c46e95b4,
+        type: 3}
+      propertyPath: simpleInteractable.response.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 2303970879332903840}
+    - target: {fileID: 5802551837629228676, guid: f72a3c07b3aaa9044a8f21b6c46e95b4,
+        type: 3}
+      propertyPath: simpleInteractable.response.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: SetActive
+      objectReference: {fileID: 0}
+    - target: {fileID: 5802551837629228676, guid: f72a3c07b3aaa9044a8f21b6c46e95b4,
+        type: 3}
+      propertyPath: simpleInteractable.response.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f72a3c07b3aaa9044a8f21b6c46e95b4, type: 3}
+--- !u!1 &2303970879332903840 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7406843150202271432, guid: f72a3c07b3aaa9044a8f21b6c46e95b4,
+    type: 3}
+  m_PrefabInstance: {fileID: 8733392086661602664}
+  m_PrefabAsset: {fileID: 0}

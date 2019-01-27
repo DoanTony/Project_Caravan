@@ -10,14 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 432a550dc31ff494a858ff5a57b85895, type: 3}
-  m_Name: dialogue_b2_Captain
+  m_Name: dialogue_b1_bridgeduo
   m_EditorClassIdentifier: 
   serializationData:
     SerializedFormat: 2
     SerializedBytes: 
-    ReferencedUnityObjects:
-    - {fileID: 11400000, guid: 308fbde690569d74bb45b1427f59d7f9, type: 2}
-    - {fileID: 11400000, guid: 7c6048fc1612d1b4899eafbf5c409b0f, type: 2}
+    ReferencedUnityObjects: []
     SerializedBytesString: 
     Prefab: {fileID: 0}
     PrefabModificationsReferencedUnityObjects: []
@@ -39,7 +37,7 @@ MonoBehaviour:
       Data: 1
     - Name: 
       Entry: 1
-      Data: Aye, it must be hard bein far from yer loved ones fer so long,
+      Data: '*Well well well.. '
     - Name: 
       Entry: 8
       Data: 
@@ -52,7 +50,7 @@ MonoBehaviour:
       Data: 2
     - Name: 
       Entry: 1
-      Data: 'but ye know, sometimes we get so busy thinkin'' about our loved ones... '
+      Data: '*Would you look at mister moneybags over here..'
     - Name: 
       Entry: 8
       Data: 
@@ -65,7 +63,7 @@ MonoBehaviour:
       Data: 3
     - Name: 
       Entry: 1
-      Data: 'back on land that we forget about th'' ones right in front o'' us.. '
+      Data: '*Have a safe trip..Showoff. '
     - Name: 
       Entry: 8
       Data: 
@@ -80,16 +78,16 @@ MonoBehaviour:
       Data: 1|AnswerQuestionDialogue[], Assembly-CSharp
     - Name: 
       Entry: 12
-      Data: 2
+      Data: 3
     - Name: 
       Entry: 7
       Data: AnswerQuestionDialogue, Assembly-CSharp
     - Name: answer
-      Entry: 1
-      Data: Captain.. I love you too.
+      Entry: 6
+      Data: 
     - Name: nextQueueDialogue
-      Entry: 10
-      Data: 0
+      Entry: 6
+      Data: 
     - Name: 
       Entry: 8
       Data: 
@@ -97,11 +95,23 @@ MonoBehaviour:
       Entry: 7
       Data: AnswerQuestionDialogue, Assembly-CSharp
     - Name: answer
-      Entry: 1
-      Data: "I\u2019m not sure I feel the same way.. I\u2019m just trying to get home"
+      Entry: 6
+      Data: 
     - Name: nextQueueDialogue
-      Entry: 10
-      Data: 1
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: AnswerQuestionDialogue, Assembly-CSharp
+    - Name: answer
+      Entry: 6
+      Data: 
+    - Name: nextQueueDialogue
+      Entry: 6
+      Data: 
     - Name: 
       Entry: 8
       Data: 
@@ -111,11 +121,11 @@ MonoBehaviour:
     - Name: 
       Entry: 8
       Data: 
-  fileName: interaction
-  characterName: Captain
+  fileName: 
+  characterName: BridgeKeeper Duo
   isNextQueue: 0
   nextQueue: {fileID: 0}
-  isAnswers: 1
+  isAnswers: 0
   isEvent: 0
   endDialogueEvent: {fileID: 0}
-  key: greeting
+  key: 
