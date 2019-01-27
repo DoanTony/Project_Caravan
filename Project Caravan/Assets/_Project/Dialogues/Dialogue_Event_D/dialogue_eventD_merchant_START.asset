@@ -1,0 +1,122 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 432a550dc31ff494a858ff5a57b85895, type: 3}
+  m_Name: dialogue_eventD_merchant_START
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects:
+    - {fileID: 11400000, guid: 7fa3450e9a0f811408259c5d669d92c0, type: 2}
+    - {fileID: 11400000, guid: b5d7450a319ecbf4284a88b668657d19, type: 2}
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: localizedText
+      Entry: 7
+      Data: 0|System.Collections.Generic.SortedDictionary`2[[System.String, mscorlib],[System.String,
+        mscorlib]], System
+    - Name: 
+      Entry: 12
+      Data: 3
+    - Name: 
+      Entry: 7
+      Data: System.Collections.Generic.KeyValuePair`2[[System.String, mscorlib],[System.String,
+        mscorlib]], mscorlib
+    - Name: 
+      Entry: 1
+      Data: 1
+    - Name: 
+      Entry: 1
+      Data: "Welcome tasty travellers. You must be running low on stock\u2026 "
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: System.Collections.Generic.KeyValuePair`2[[System.String, mscorlib],[System.String,
+        mscorlib]], mscorlib
+    - Name: 
+      Entry: 1
+      Data: 2
+    - Name: 
+      Entry: 1
+      Data: "You must be very desperate.. Yes\u2026."
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: System.Collections.Generic.KeyValuePair`2[[System.String, mscorlib],[System.String,
+        mscorlib]], mscorlib
+    - Name: 
+      Entry: 1
+      Data: 3
+    - Name: 
+      Entry: 1
+      Data: '.All alone on this empty path.. You should probably purchase something..just
+        in case.. '
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: answerQuestions
+      Entry: 7
+      Data: 1|AnswerQuestionDialogue[], Assembly-CSharp
+    - Name: 
+      Entry: 12
+      Data: 2
+    - Name: 
+      Entry: 7
+      Data: AnswerQuestionDialogue, Assembly-CSharp
+    - Name: answer
+      Entry: 1
+      Data: 'Is that a threat? '
+    - Name: nextQueueDialogue
+      Entry: 10
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: AnswerQuestionDialogue, Assembly-CSharp
+    - Name: answer
+      Entry: 1
+      Data: Uh...okay
+    - Name: nextQueueDialogue
+      Entry: 10
+      Data: 1
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+  fileName: 
+  characterName: Merchant
+  isNextQueue: 0
+  nextQueue: {fileID: 0}
+  isAnswers: 1
+  isEvent: 1
+  endDialogueEvent: {fileID: 11400000, guid: 1ef406a9d16d83a4f9d56cfe54b71255, type: 2}
+  key: 
