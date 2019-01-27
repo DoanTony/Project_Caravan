@@ -52,6 +52,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3bb0e12117284af428089e643c73fffb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  setting: {fileID: 11400000, guid: 0b78ca4ba7090304cbf66dada2610cb0, type: 2}
 --- !u!114 &1094665380867171966
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -179,7 +180,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 64
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
 --- !u!1 &1094665381769382802
 GameObject:
   m_ObjectHideFlags: 0

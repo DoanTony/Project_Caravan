@@ -16,6 +16,7 @@ public class LocalizedText : SerializedMonoBehaviour
 
     [Title("AnswerButtons")]
     public GameObject[] answerButtons = new GameObject[3];
+    public CharacterSettings characterSettings;
 
     [ReadOnly] public string currentCharacter = "";
     [ReadOnly] public Queue<string> queuedDialogues = new Queue<string>();
@@ -69,7 +70,7 @@ public class LocalizedText : SerializedMonoBehaviour
         nextDialogue = null;
         answerQuestionDialogues = null;
         currentDialogue = _dialoguebox;
-
+        characterSettings.LockMovements();
         foreach (var key in _dialoguebox.localizedText.Keys)
         {
             queuedDialogues.Enqueue(_dialoguebox.localizedText[key]);
@@ -123,6 +124,7 @@ public class LocalizedText : SerializedMonoBehaviour
             currentDialogue.endDialogueEvent.Raise();
         }
         background.SetActive(false);
+        characterSettings.UnlockMovements();
         text.text = "";
     }
 
@@ -145,7 +147,7 @@ public class LocalizedText : SerializedMonoBehaviour
         }
         else
         {
-            yield return new WaitForSeconds(0.5f);
+            yield return new WaitForSeconds(0.3f);
             canDequeueNextSentence = true;
         }
       

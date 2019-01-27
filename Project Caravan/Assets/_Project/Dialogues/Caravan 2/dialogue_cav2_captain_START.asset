@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 432a550dc31ff494a858ff5a57b85895, type: 3}
-  m_Name: dialogue_b1-2_Captain
+  m_Name: dialogue_cav2_captain_START
   m_EditorClassIdentifier: 
   serializationData:
     SerializedFormat: 2
@@ -27,7 +27,7 @@ MonoBehaviour:
         mscorlib]], System
     - Name: 
       Entry: 12
-      Data: 3
+      Data: 5
     - Name: 
       Entry: 7
       Data: System.Collections.Generic.KeyValuePair`2[[System.String, mscorlib],[System.String,
@@ -37,8 +37,7 @@ MonoBehaviour:
       Data: 1
     - Name: 
       Entry: 1
-      Data: '''n ye''ve ne''er seen a million doubloons, so how do ye know ye wants
-        that?'
+      Data: That darn bridge toll be too expensive! ..Yarr..
     - Name: 
       Entry: 8
       Data: 
@@ -51,7 +50,8 @@ MonoBehaviour:
       Data: 2
     - Name: 
       Entry: 1
-      Data: "Home is where me heart longs t\u2019 be."
+      Data: I still can nah believe scallywags would try to cross the bridge without
+        paying..
     - Name: 
       Entry: 8
       Data: 
@@ -64,7 +64,33 @@ MonoBehaviour:
       Data: 3
     - Name: 
       Entry: 1
-      Data: "What means home t\u2019 ye?"
+      Data: 'A pirate would never do such a thing! '
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: System.Collections.Generic.KeyValuePair`2[[System.String, mscorlib],[System.String,
+        mscorlib]], mscorlib
+    - Name: 
+      Entry: 1
+      Data: 4
+    - Name: 
+      Entry: 1
+      Data: Did I ever tell ye the story of how I slayed the Kraken?
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: System.Collections.Generic.KeyValuePair`2[[System.String, mscorlib],[System.String,
+        mscorlib]], mscorlib
+    - Name: 
+      Entry: 1
+      Data: 5
+    - Name: 
+      Entry: 1
+      Data: "I\u2019ll tell it to ye if it ever happens\u2026 HARHARHAR"
     - Name: 
       Entry: 8
       Data: 
@@ -123,7 +149,7 @@ MonoBehaviour:
       Entry: 8
       Data: 
   fileName: 
-  characterName: name
+  characterName: Captain
   isNextQueue: 0
   nextQueue: {fileID: 0}
   isAnswers: 0

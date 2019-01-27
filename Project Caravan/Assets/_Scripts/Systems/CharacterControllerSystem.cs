@@ -19,8 +19,11 @@ public class CharacterControllerSystem : ComponentSystem
         float dt = Time.deltaTime;
         for (int i = 0; i < CharactersData.Length; i++)
         {
-            HorizontalInput(ref CharactersData.Controller[i].horiziontal);
-            Move(CharactersData.Controller[i], CharactersData.Transform[i], dt);
+            if (!CharactersData.Character[i].setting.lockMovements)
+            {
+                HorizontalInput(ref CharactersData.Controller[i].horiziontal);
+                Move(CharactersData.Controller[i], CharactersData.Transform[i], dt);
+            }
         }
     }
 
