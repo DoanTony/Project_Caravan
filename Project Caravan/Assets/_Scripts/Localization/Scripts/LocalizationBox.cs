@@ -5,26 +5,54 @@ using Sirenix.OdinInspector;
 using SnowtailTools.Utilities;
 using System.Linq;
 
+public struct AnswerQuestionDialogue
+{
+    public string answer;
+    public LocalizationBox nextQueueDialogue;
+}
+
 [CreateAssetMenu(fileName = "Localization Collection", menuName = "Localization/Collection", order = 2)]
 public class LocalizationBox : SerializedScriptableObject
 {
     #region Public Variables
-    public string fileName;
+    [HideInInspector] public string fileName; // Disabling this for Game Jam
+    [Title("Character information")]
     public string characterName = "name";
-    private LocalizationManager lm;
+
+    [Title("List of Dialogues")]
+    public Dictionary<string, string> localizedText = new Dictionary<string, string>();
+    [Space]
+
+    //Next dialogue (optional)
+    [Title("Next Queue Dialogue")]
+
+    [DisableIf("isAnswers")]
+    public bool isNextQueue;
+    [ShowIf("isNextQueue")]
+    public LocalizationBox nextQueue;
+
+    [DisableIf("isNextQueue")]
+    public bool isAnswers;
+    [ShowIf("isAnswers")]
+    public AnswerQuestionDialogue[] answerQuestions = new AnswerQuestionDialogue[3];
+
+    [Title("Events")]
+    public bool isEvent;
+    [ShowIf("isEvent")]
+    public GameEvent endDialogueEvent;
+
+ 
     #endregion
     [Space]
 
     #region Private variables
-    [SerializeField] private Dictionary<string, string> localizedText = new Dictionary<string, string>();
-    [Space]
+    private LocalizationManager lm;
     private string LOCALIZATION_MANAGER_STRING = "LocalizationManager";
     #endregion
 
 #if UNITY_EDITOR
 
     #region DEBUGGER
-
     [Title("Debug")]
     [ValueDropdown("keys")] public string key;
     private string[] keys;
@@ -72,8 +100,16 @@ public class LocalizationBox : SerializedScriptableObject
     {
         if (Validation.ValidateField<LocalizedText>(LocalizedText.instance, "Please add an instance of localized text and be on <i>PLAY MODE</i>"))
         {
-            //LocalizedText.instance.ShowDialogue(characterName + ": " + localizedText[_key]);
-            LocalizedText.instance.InitDialogue(localizedText, characterName);
+            LocalizedText.instance.ShowDialogue(characterName + ": " + localizedText[_key]);
+            //LocalizedText.instance.InitDialogue(localizedText, characterName);
+        }
+    }
+
+    public void InitDialogue()
+    {
+        if (Validation.ValidateField<LocalizedText>(LocalizedText.instance, "Please add an instance of localized text and be on <i>PLAY MODE</i>"))
+        {
+            LocalizedText.instance.InitDialogue(this);
         }
     }
     #endregion

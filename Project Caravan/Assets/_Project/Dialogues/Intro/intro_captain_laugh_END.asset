@@ -10,12 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 432a550dc31ff494a858ff5a57b85895, type: 3}
-  m_Name: intro_dialogue
+  m_Name: intro_captain_laugh_END
   m_EditorClassIdentifier: 
   serializationData:
     SerializedFormat: 2
     SerializedBytes: 
-    ReferencedUnityObjects: []
+    ReferencedUnityObjects:
+    - {fileID: 11400000}
+    - {fileID: 11400000, guid: 61090b3a4e23eee458fc7118524db0e9, type: 2}
     SerializedBytesString: 
     Prefab: {fileID: 0}
     PrefabModificationsReferencedUnityObjects: []
@@ -34,28 +36,64 @@ MonoBehaviour:
       Data: 
     - Name: 
       Entry: 12
-      Data: 2
+      Data: 1
     - Name: 
       Entry: 7
       Data: 
     - Name: 
       Entry: 1
-      Data: intro_oldman_1
+      Data: intro_captain_laugh
     - Name: 
       Entry: 1
-      Data: Why hello there!
+      Data: HARHARHARHAR!
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: answerQuestions
+      Entry: 7
+      Data: 2|AnswerQuestionDialogue[], Assembly-CSharp
+    - Name: 
+      Entry: 12
+      Data: 3
+    - Name: 
+      Entry: 7
+      Data: AnswerQuestionDialogue, Assembly-CSharp
+    - Name: answer
+      Entry: 1
+      Data: '...'
+    - Name: nextQueueDialogue
+      Entry: 10
+      Data: 0
     - Name: 
       Entry: 8
       Data: 
     - Name: 
       Entry: 7
+      Data: AnswerQuestionDialogue, Assembly-CSharp
+    - Name: answer
+      Entry: 1
+      Data: '*Change the subject*'
+    - Name: nextQueueDialogue
+      Entry: 10
+      Data: 1
+    - Name: 
+      Entry: 8
       Data: 
     - Name: 
-      Entry: 1
-      Data: intro_oldman_2
-    - Name: 
-      Entry: 1
-      Data: Heading home huh? What's your name?
+      Entry: 7
+      Data: AnswerQuestionDialogue, Assembly-CSharp
+    - Name: answer
+      Entry: 6
+      Data: 
+    - Name: nextQueueDialogue
+      Entry: 6
+      Data: 
     - Name: 
       Entry: 8
       Data: 
@@ -66,5 +104,10 @@ MonoBehaviour:
       Entry: 8
       Data: 
   fileName: interaction
-  characterName: name
+  characterName: Captain
+  isNextQueue: 0
+  nextQueue: {fileID: 11400000, guid: 9f46b7fcb553c7a45a0895fbad845d8c, type: 2}
+  isAnswers: 0
+  isEvent: 1
+  endDialogueEvent: {fileID: 11400000, guid: 5a24887b140422844a4cb16bf34c7e39, type: 2}
   key: greeting
