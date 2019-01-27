@@ -10,14 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 432a550dc31ff494a858ff5a57b85895, type: 3}
-  m_Name: dialogue_eventD_merchant_START
+  m_Name: dialogue_cav5_bearknight_a1
   m_EditorClassIdentifier: 
   serializationData:
     SerializedFormat: 2
     SerializedBytes: 
-    ReferencedUnityObjects:
-    - {fileID: 11400000, guid: 7fa3450e9a0f811408259c5d669d92c0, type: 2}
-    - {fileID: 11400000, guid: b5d7450a319ecbf4284a88b668657d19, type: 2}
+    ReferencedUnityObjects: []
     SerializedBytesString: 
     Prefab: {fileID: 0}
     PrefabModificationsReferencedUnityObjects: []
@@ -29,7 +27,7 @@ MonoBehaviour:
         mscorlib]], System
     - Name: 
       Entry: 12
-      Data: 3
+      Data: 4
     - Name: 
       Entry: 7
       Data: System.Collections.Generic.KeyValuePair`2[[System.String, mscorlib],[System.String,
@@ -39,7 +37,8 @@ MonoBehaviour:
       Data: 1
     - Name: 
       Entry: 1
-      Data: "Welcome tasty travellers. You must be running low on stock\u2026 "
+      Data: We shall soon part ways.  I hope thou shall continue to fight for those
+        whom need help once thou art home.
     - Name: 
       Entry: 8
       Data: 
@@ -52,7 +51,8 @@ MonoBehaviour:
       Data: 2
     - Name: 
       Entry: 1
-      Data: "You must be very desperate.. Yes\u2026."
+      Data: 'E''en when we are truly home, one should not allow oneself to be too
+        comfortable. '
     - Name: 
       Entry: 8
       Data: 
@@ -65,8 +65,21 @@ MonoBehaviour:
       Data: 3
     - Name: 
       Entry: 1
-      Data: 'All alone on this empty path.. You should probably purchase something..just
-        in case.. '
+      Data: ' Haply that is the reason I choose to present myself this way. That we
+        all can feel just a little bit uncomfortable. '
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: System.Collections.Generic.KeyValuePair`2[[System.String, mscorlib],[System.String,
+        mscorlib]], mscorlib
+    - Name: 
+      Entry: 1
+      Data: 4
+    - Name: 
+      Entry: 1
+      Data: Are thou sure thou wishes to go home dressed like that?
     - Name: 
       Entry: 8
       Data: 
@@ -81,16 +94,16 @@ MonoBehaviour:
       Data: 1|AnswerQuestionDialogue[], Assembly-CSharp
     - Name: 
       Entry: 12
-      Data: 2
+      Data: 3
     - Name: 
       Entry: 7
       Data: AnswerQuestionDialogue, Assembly-CSharp
     - Name: answer
-      Entry: 1
-      Data: 'Is that a threat? '
+      Entry: 6
+      Data: 
     - Name: nextQueueDialogue
-      Entry: 10
-      Data: 0
+      Entry: 6
+      Data: 
     - Name: 
       Entry: 8
       Data: 
@@ -98,11 +111,23 @@ MonoBehaviour:
       Entry: 7
       Data: AnswerQuestionDialogue, Assembly-CSharp
     - Name: answer
-      Entry: 1
-      Data: Uh...okay
+      Entry: 6
+      Data: 
     - Name: nextQueueDialogue
-      Entry: 10
-      Data: 1
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: AnswerQuestionDialogue, Assembly-CSharp
+    - Name: answer
+      Entry: 6
+      Data: 
+    - Name: nextQueueDialogue
+      Entry: 6
+      Data: 
     - Name: 
       Entry: 8
       Data: 
@@ -113,10 +138,10 @@ MonoBehaviour:
       Entry: 8
       Data: 
   fileName: 
-  characterName: Merchant
-  isNextQueue: 0
-  nextQueue: {fileID: 0}
-  isAnswers: 1
-  isEvent: 1
-  endDialogueEvent: {fileID: 11400000, guid: 1ef406a9d16d83a4f9d56cfe54b71255, type: 2}
+  characterName: Sir Bare Knight
+  isNextQueue: 1
+  nextQueue: {fileID: 11400000, guid: 2c4dfce95df046149944e0bbf170a6c7, type: 2}
+  isAnswers: 0
+  isEvent: 0
+  endDialogueEvent: {fileID: 0}
   key: 

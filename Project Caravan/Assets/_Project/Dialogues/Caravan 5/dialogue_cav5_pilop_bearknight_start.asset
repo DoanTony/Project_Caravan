@@ -97,7 +97,7 @@ MonoBehaviour:
       Entry: 8
       Data: 
   fileName: 
-  characterName: Sir Bare Knight
+  characterName: Pilop
   isNextQueue: 1
   nextQueue: {fileID: 11400000, guid: 8c423939ce4a04d41a8f1915b0840c61, type: 2}
   isAnswers: 0

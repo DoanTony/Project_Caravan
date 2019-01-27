@@ -27,7 +27,46 @@ MonoBehaviour:
         mscorlib]], System
     - Name: 
       Entry: 12
-      Data: 0
+      Data: 3
+    - Name: 
+      Entry: 7
+      Data: System.Collections.Generic.KeyValuePair`2[[System.String, mscorlib],[System.String,
+        mscorlib]], mscorlib
+    - Name: 
+      Entry: 1
+      Data: 1
+    - Name: 
+      Entry: 1
+      Data: "Quite a crew we be gatherin\u2019 here eh laddie? \u2026  YARR!!!"
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: System.Collections.Generic.KeyValuePair`2[[System.String, mscorlib],[System.String,
+        mscorlib]], mscorlib
+    - Name: 
+      Entry: 1
+      Data: 2
+    - Name: 
+      Entry: 1
+      Data: "Yer nigh-on home laddie. Won\u2019t be long now."
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: System.Collections.Generic.KeyValuePair`2[[System.String, mscorlib],[System.String,
+        mscorlib]], mscorlib
+    - Name: 
+      Entry: 1
+      Data: 3
+    - Name: 
+      Entry: 1
+      Data: "I\u2019ll hate t\u2019 see ye go"
+    - Name: 
+      Entry: 8
+      Data: 
     - Name: 
       Entry: 13
       Data: 
@@ -85,7 +124,7 @@ MonoBehaviour:
   fileName: 
   characterName: Captain
   isNextQueue: 1
-  nextQueue: {fileID: 0}
+  nextQueue: {fileID: 11400000, guid: 8b75b69340db8e740b72594cbf80ed66, type: 2}
   isAnswers: 0
   isEvent: 0
   endDialogueEvent: {fileID: 0}
