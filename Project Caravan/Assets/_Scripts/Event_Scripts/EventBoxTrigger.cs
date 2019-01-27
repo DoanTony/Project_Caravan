@@ -35,7 +35,7 @@ public class EventBoxTrigger : MonoBehaviour
         {
             if (other.CompareTag("Player"))
             {
-                if (Input.GetKeyDown(KeyCode.W))
+                    if (Input.GetKeyDown(KeyCode.W))
                 {
                     InvokeEvent();
                 }

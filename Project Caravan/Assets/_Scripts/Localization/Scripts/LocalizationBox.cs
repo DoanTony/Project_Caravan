@@ -16,7 +16,7 @@ public class LocalizationBox : SerializedScriptableObject
     [Space]
 
     #region Private variables
-    [SerializeField] [ReadOnly] private Dictionary<string, string> localizedText = new Dictionary<string, string>();
+    [SerializeField] private Dictionary<string, string> localizedText = new Dictionary<string, string>();
     [Space]
     private string LOCALIZATION_MANAGER_STRING = "LocalizationManager";
     #endregion
@@ -49,8 +49,6 @@ public class LocalizationBox : SerializedScriptableObject
     #endregion
 
     #region FUNCTIONALITIES
-    [Title("Functionalities")]
-    [Button(ButtonSizes.Gigantic , ButtonStyle.CompactBox)]
     public void FetchLocalizedText()
     {
         if (lm == null)
@@ -74,7 +72,8 @@ public class LocalizationBox : SerializedScriptableObject
     {
         if (Validation.ValidateField<LocalizedText>(LocalizedText.instance, "Please add an instance of localized text and be on <i>PLAY MODE</i>"))
         {
-            LocalizedText.instance.ShowDialogue(localizedText[_key]);
+            //LocalizedText.instance.ShowDialogue(characterName + ": " + localizedText[_key]);
+            LocalizedText.instance.InitDialogue(localizedText, characterName);
         }
     }
     #endregion

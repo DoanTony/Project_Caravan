@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 432a550dc31ff494a858ff5a57b85895, type: 3}
-  m_Name: Dialogue1
+  m_Name: intro_dialogue
   m_EditorClassIdentifier: 
   serializationData:
     SerializedFormat: 2
@@ -34,16 +34,28 @@ MonoBehaviour:
       Data: 
     - Name: 
       Entry: 12
-      Data: 1
+      Data: 2
     - Name: 
       Entry: 7
       Data: 
     - Name: 
       Entry: 1
-      Data: greeting
+      Data: intro_oldman_1
     - Name: 
       Entry: 1
       Data: Why hello there!
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: 
+      Entry: 1
+      Data: intro_oldman_2
+    - Name: 
+      Entry: 1
+      Data: Heading home huh? What's your name?
     - Name: 
       Entry: 8
       Data: 
@@ -54,4 +66,5 @@ MonoBehaviour:
       Entry: 8
       Data: 
   fileName: interaction
+  characterName: name
   key: greeting

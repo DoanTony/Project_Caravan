@@ -1,8 +1,14 @@
 {
+	"character" : "caravan_man",
+	"beat": "intro",
 	"items" : [
 		{
 			"key": "greeting",
 			"value": "Why hello there!"
+		},
+		{
+			"key":"heading_home",
+			"value" : ""
 		}
 	
 	]
