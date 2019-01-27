@@ -124,6 +124,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: NPC_BearKnight var (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 7535896050481329589, guid: 169380599b5a107488fa5a2d8faf5a7c,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4003624799707974494, guid: 169380599b5a107488fa5a2d8faf5a7c,
         type: 3}
       propertyPath: m_LocalPosition.x
