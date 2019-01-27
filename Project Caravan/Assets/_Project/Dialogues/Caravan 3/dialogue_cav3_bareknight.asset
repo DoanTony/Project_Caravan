@@ -10,14 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 432a550dc31ff494a858ff5a57b85895, type: 3}
-  m_Name: dialogue_eventB_beggar_a_START
+  m_Name: dialogue_cav3_bareknight
   m_EditorClassIdentifier: 
   serializationData:
     SerializedFormat: 2
     SerializedBytes: 
-    ReferencedUnityObjects:
-    - {fileID: 11400000, guid: 2bdbe356763c52143b0a23cac3df53fc, type: 2}
-    - {fileID: 11400000, guid: 24ea8838f21cdfe48849cbdb84b4bc85, type: 2}
+    ReferencedUnityObjects: []
     SerializedBytesString: 
     Prefab: {fileID: 0}
     PrefabModificationsReferencedUnityObjects: []
@@ -29,7 +27,7 @@ MonoBehaviour:
         mscorlib]], System
     - Name: 
       Entry: 12
-      Data: 2
+      Data: 3
     - Name: 
       Entry: 7
       Data: System.Collections.Generic.KeyValuePair`2[[System.String, mscorlib],[System.String,
@@ -39,8 +37,7 @@ MonoBehaviour:
       Data: 1
     - Name: 
       Entry: 1
-      Data: By your leave kind travelers.  Wouldst thou spare some gold for a starving
-        beggar?
+      Data: How dare thou wear pants in my presence!
     - Name: 
       Entry: 8
       Data: 
@@ -53,7 +50,21 @@ MonoBehaviour:
       Data: 2
     - Name: 
       Entry: 1
-      Data: For those who are charitable are deemed honorable.
+      Data: Hast thou forgotten thy manners?
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: System.Collections.Generic.KeyValuePair`2[[System.String, mscorlib],[System.String,
+        mscorlib]], mscorlib
+    - Name: 
+      Entry: 1
+      Data: 3
+    - Name: 
+      Entry: 1
+      Data: "Home? I hast no home. I fight for the homes of the oppressed so they
+        may one day be free as a brave knight\u2019s naked thighs."
     - Name: 
       Entry: 8
       Data: 
@@ -73,11 +84,11 @@ MonoBehaviour:
       Entry: 7
       Data: AnswerQuestionDialogue, Assembly-CSharp
     - Name: answer
-      Entry: 1
-      Data: Here.. have some gold
+      Entry: 6
+      Data: 
     - Name: nextQueueDialogue
-      Entry: 10
-      Data: 0
+      Entry: 6
+      Data: 
     - Name: 
       Entry: 8
       Data: 
@@ -85,11 +96,11 @@ MonoBehaviour:
       Entry: 7
       Data: AnswerQuestionDialogue, Assembly-CSharp
     - Name: answer
-      Entry: 1
-      Data: What kind of a beggar asks for gold?
+      Entry: 6
+      Data: 
     - Name: nextQueueDialogue
-      Entry: 10
-      Data: 1
+      Entry: 6
+      Data: 
     - Name: 
       Entry: 8
       Data: 
@@ -112,10 +123,10 @@ MonoBehaviour:
       Entry: 8
       Data: 
   fileName: 
-  characterName: Beggar
+  characterName: The Bare Knight
   isNextQueue: 0
   nextQueue: {fileID: 0}
-  isAnswers: 1
+  isAnswers: 0
   isEvent: 1
-  endDialogueEvent: {fileID: 11400000, guid: 1ef406a9d16d83a4f9d56cfe54b71255, type: 2}
+  endDialogueEvent: {fileID: 11400000, guid: 5a24887b140422844a4cb16bf34c7e39, type: 2}
   key: 

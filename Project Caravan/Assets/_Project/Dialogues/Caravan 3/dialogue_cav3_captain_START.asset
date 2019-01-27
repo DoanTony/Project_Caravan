@@ -10,14 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 432a550dc31ff494a858ff5a57b85895, type: 3}
-  m_Name: dialogue_eventB_beggar_a_START
+  m_Name: dialogue_cav3_captain_START
   m_EditorClassIdentifier: 
   serializationData:
     SerializedFormat: 2
     SerializedBytes: 
-    ReferencedUnityObjects:
-    - {fileID: 11400000, guid: 2bdbe356763c52143b0a23cac3df53fc, type: 2}
-    - {fileID: 11400000, guid: 24ea8838f21cdfe48849cbdb84b4bc85, type: 2}
+    ReferencedUnityObjects: []
     SerializedBytesString: 
     Prefab: {fileID: 0}
     PrefabModificationsReferencedUnityObjects: []
@@ -29,7 +27,7 @@ MonoBehaviour:
         mscorlib]], System
     - Name: 
       Entry: 12
-      Data: 2
+      Data: 4
     - Name: 
       Entry: 7
       Data: System.Collections.Generic.KeyValuePair`2[[System.String, mscorlib],[System.String,
@@ -39,8 +37,7 @@ MonoBehaviour:
       Data: 1
     - Name: 
       Entry: 1
-      Data: By your leave kind travelers.  Wouldst thou spare some gold for a starving
-        beggar?
+      Data: That squiffy bear ye dragged aboard made fun of me pantaloons!
     - Name: 
       Entry: 8
       Data: 
@@ -53,7 +50,34 @@ MonoBehaviour:
       Data: 2
     - Name: 
       Entry: 1
-      Data: For those who are charitable are deemed honorable.
+      Data: "Blistering barnacles!! He ain\u2019t even wearin\u2019 anythin\u2019...
+        ARRR "
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: System.Collections.Generic.KeyValuePair`2[[System.String, mscorlib],[System.String,
+        mscorlib]], mscorlib
+    - Name: 
+      Entry: 1
+      Data: 3
+    - Name: 
+      Entry: 1
+      Data: "The Bare Knight don\u2019t need a sword.. His face be deadlier! HARHARHAR"
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: System.Collections.Generic.KeyValuePair`2[[System.String, mscorlib],[System.String,
+        mscorlib]], mscorlib
+    - Name: 
+      Entry: 1
+      Data: 4
+    - Name: 
+      Entry: 1
+      Data: Will ye tell him I said that?
     - Name: 
       Entry: 8
       Data: 
@@ -73,11 +97,11 @@ MonoBehaviour:
       Entry: 7
       Data: AnswerQuestionDialogue, Assembly-CSharp
     - Name: answer
-      Entry: 1
-      Data: Here.. have some gold
+      Entry: 6
+      Data: 
     - Name: nextQueueDialogue
-      Entry: 10
-      Data: 0
+      Entry: 6
+      Data: 
     - Name: 
       Entry: 8
       Data: 
@@ -85,11 +109,11 @@ MonoBehaviour:
       Entry: 7
       Data: AnswerQuestionDialogue, Assembly-CSharp
     - Name: answer
-      Entry: 1
-      Data: What kind of a beggar asks for gold?
+      Entry: 6
+      Data: 
     - Name: nextQueueDialogue
-      Entry: 10
-      Data: 1
+      Entry: 6
+      Data: 
     - Name: 
       Entry: 8
       Data: 
@@ -112,10 +136,10 @@ MonoBehaviour:
       Entry: 8
       Data: 
   fileName: 
-  characterName: Beggar
-  isNextQueue: 0
-  nextQueue: {fileID: 0}
-  isAnswers: 1
-  isEvent: 1
-  endDialogueEvent: {fileID: 11400000, guid: 1ef406a9d16d83a4f9d56cfe54b71255, type: 2}
+  characterName: Captain
+  isNextQueue: 1
+  nextQueue: {fileID: 11400000, guid: 9c64af59b08037e43bcb4327b2bf2652, type: 2}
+  isAnswers: 0
+  isEvent: 0
+  endDialogueEvent: {fileID: 0}
   key: 

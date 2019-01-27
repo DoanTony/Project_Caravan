@@ -87,6 +87,17 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 9
       objectReference: {fileID: 0}
+    - target: {fileID: 8853315737661720470, guid: f72a3c07b3aaa9044a8f21b6c46e95b4,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 40519751544329549, guid: f72a3c07b3aaa9044a8f21b6c46e95b4,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: a873eac95f756f541883cecf665d1c94,
+        type: 3}
     - target: {fileID: 5802551837629228676, guid: f72a3c07b3aaa9044a8f21b6c46e95b4,
         type: 3}
       propertyPath: simpleInteractable.response.m_PersistentCalls.m_Calls.Array.size
@@ -133,12 +144,6 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 11400000, guid: 03537cb9066a223479949e2b8de10e5e,
         type: 2}
-    - target: {fileID: 40519751544329549, guid: f72a3c07b3aaa9044a8f21b6c46e95b4,
-        type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: a873eac95f756f541883cecf665d1c94,
-        type: 3}
     - target: {fileID: 3561194657397790664, guid: f72a3c07b3aaa9044a8f21b6c46e95b4,
         type: 3}
       propertyPath: Response.m_PersistentCalls.m_Calls.Array.data[0].m_Target
