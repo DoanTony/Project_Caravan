@@ -10,14 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 432a550dc31ff494a858ff5a57b85895, type: 3}
-  m_Name: intro_captain_dialogue_1_START
+  m_Name: dialogue_a_Captain_START
   m_EditorClassIdentifier: 
   serializationData:
     SerializedFormat: 2
     SerializedBytes: 
     ReferencedUnityObjects:
-    - {fileID: 11400000, guid: d2f8beca4d15f6b4caced18c66a62241, type: 2}
-    - {fileID: 11400000, guid: 61090b3a4e23eee458fc7118524db0e9, type: 2}
+    - {fileID: 11400000, guid: 0ebce832f05771c499656f783523b93b, type: 2}
+    - {fileID: 11400000, guid: 5fdf7e6637a30ec4b8fccd74238af810, type: 2}
     SerializedBytesString: 
     Prefab: {fileID: 0}
     PrefabModificationsReferencedUnityObjects: []
@@ -42,10 +42,10 @@ MonoBehaviour:
       Data: 
     - Name: 
       Entry: 1
-      Data: intro_oldman_1
+      Data: 1
     - Name: 
       Entry: 1
-      Data: Yaarrrr!
+      Data: "We've been travellin\u2019 together for a while haven\u2019t we.. "
     - Name: 
       Entry: 8
       Data: 
@@ -54,10 +54,10 @@ MonoBehaviour:
       Data: 
     - Name: 
       Entry: 1
-      Data: intro_oldman_2
+      Data: 2
     - Name: 
       Entry: 1
-      Data: Heading home huh? What's your name?
+      Data: People have come and gone, but you're still here.
     - Name: 
       Entry: 8
       Data: 
@@ -78,7 +78,7 @@ MonoBehaviour:
       Data: AnswerQuestionDialogue, Assembly-CSharp
     - Name: answer
       Entry: 1
-      Data: '...'
+      Data: "It\u2019s been fun"
     - Name: nextQueueDialogue
       Entry: 10
       Data: 0
@@ -90,7 +90,7 @@ MonoBehaviour:
       Data: AnswerQuestionDialogue, Assembly-CSharp
     - Name: answer
       Entry: 1
-      Data: '*Change the subject*'
+      Data: " I can\u2019t wait to go home"
     - Name: nextQueueDialogue
       Entry: 10
       Data: 1
