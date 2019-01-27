@@ -12,9 +12,19 @@ public class LocalizedText : SerializedMonoBehaviour
     public LocalizationManager localizationManager;
     TextMeshProUGUI text;
     public GameObject background;
+    public float letterDelay = 0.5f;
+
+    [Title("AnswerButtons")]
+    public GameObject[] answerButtons = new GameObject[3];
 
     [ReadOnly] public string currentCharacter = "";
     [ReadOnly] public Queue<string> queuedDialogues = new Queue<string>();
+
+    private bool canDequeueNextSentence = false;
+    private LocalizationBox nextDialogue;
+    private LocalizationBox currentDialogue;
+    private AnswerQuestionDialogue[] answerQuestionDialogues;
+
     private void Awake()
     {
         InitializeSingleton();
@@ -43,41 +53,75 @@ public class LocalizedText : SerializedMonoBehaviour
 
     private void Update()
     {
-        if(queuedDialogues.Count > 0)
+        if (canDequeueNextSentence)
         {
-            if(Input.GetMouseButtonDown(0))
+            if (Input.GetMouseButtonDown(0) || Input.GetKeyDown(KeyCode.Space))
             {
                 DisplayNextSentence();
             }
         }
     }
-    public void InitDialogue(Dictionary<string,string> _dialogues, string _characterName)
+    public void InitDialogue(LocalizationBox _dialoguebox)
     {
         queuedDialogues.Clear();
-        currentCharacter = _characterName;
+        currentCharacter = _dialoguebox.characterName;
         background.SetActive(true);
-        foreach (var key in _dialogues.Keys)
+        nextDialogue = null;
+        answerQuestionDialogues = null;
+        currentDialogue = _dialoguebox;
+
+        foreach (var key in _dialoguebox.localizedText.Keys)
         {
-            queuedDialogues.Enqueue(_dialogues[key]);
+            queuedDialogues.Enqueue(_dialoguebox.localizedText[key]);
         }
+
+        // Queue up next dialogue
+        if (_dialoguebox.isNextQueue)
+        {
+            nextDialogue = _dialoguebox.nextQueue;
+        }
+
+        if (_dialoguebox.isAnswers)
+        {
+            answerQuestionDialogues = _dialoguebox.answerQuestions;
+        }
+
         DisplayNextSentence();
     }
 
     [ContextMenu("Next sentence")]
     private void DisplayNextSentence()
     {
-        if(queuedDialogues.Count == 0)
-        {
+        ResetButtons();
+        canDequeueNextSentence = false;
+
+        if (queuedDialogues.Count == 0)
+        {           
+            if (nextDialogue != null)
+            {
+                if (currentDialogue.isEvent)
+                {
+                    currentDialogue.endDialogueEvent.Raise();
+                }
+
+                InitDialogue(nextDialogue);
+                return;
+            }          
             EndDialogue();
             return;
         }
 
         string sentence = queuedDialogues.Dequeue();
-        text.text =  sentence;
+        StopCoroutine("TypeSentence");
+        StartCoroutine(TypeSentence(sentence));
     }
 
     private void EndDialogue()
     {
+        if (currentDialogue.isEvent)
+        {
+            currentDialogue.endDialogueEvent.Raise();
+        }
         background.SetActive(false);
         text.text = "";
     }
@@ -85,6 +129,50 @@ public class LocalizedText : SerializedMonoBehaviour
     public void ShowDialogue(string _text)
     {
         text.text = _text;
-   
+    }
+
+    private IEnumerator TypeSentence(string _sentence)
+    {
+        text.text = currentCharacter + ": ";
+        foreach (Char letter in _sentence.ToCharArray())
+        {
+            text.text += letter;
+            yield return new WaitForSeconds(letterDelay);
+        }
+        if (queuedDialogues.Count == 0 && answerQuestionDialogues != null)
+        {
+            EnableButtons(answerQuestionDialogues);
+        }
+        else
+        {
+            yield return new WaitForSeconds(0.5f);
+            canDequeueNextSentence = true;
+        }
+      
+    }
+
+    public void AnswerQuestion(int _index)
+    {
+        InitDialogue(answerQuestionDialogues[_index].nextQueueDialogue);
+    }
+
+    private void EnableButtons(AnswerQuestionDialogue[] _answerQuestionDialogues)
+    {
+        for (int i = 0; i < _answerQuestionDialogues.Length; i++)
+        {
+            if (_answerQuestionDialogues[i].nextQueueDialogue != null)
+            {
+                answerButtons[i].SetActive(true);
+                answerButtons[i].GetComponentInChildren<Text>().text = answerQuestionDialogues[i].answer;
+            }
+        }
+    }
+    
+    private void ResetButtons()
+    {
+        for (int i = 0; i < 3; i++)
+        {
+            answerButtons[i].SetActive(false);
+        }
     }
 }
