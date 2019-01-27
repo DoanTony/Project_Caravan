@@ -44,7 +44,7 @@ RenderSettings:
 LightmapSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 11
-  m_GIWorkflowMode: 0
+  m_GIWorkflowMode: 1
   m_GISettings:
     serializedVersion: 2
     m_BounceScale: 1
@@ -88,7 +88,8 @@ LightmapSettings:
     m_PVRFilteringAtrousPositionSigmaIndirect: 2
     m_PVRFilteringAtrousPositionSigmaAO: 1
     m_ShowResolutionOverlay: 1
-  m_LightingDataAsset: {fileID: 0}
+  m_LightingDataAsset: {fileID: 112000012, guid: a5846862efc9fe4489695af1aa12d511,
+    type: 2}
   m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
@@ -517,17 +518,17 @@ PrefabInstance:
         type: 3}
       propertyPath: answerButtons.Array.data[0]
       value: 
-      objectReference: {fileID: 363312691}
+      objectReference: {fileID: 0}
     - target: {fileID: 1747057536924946104, guid: 4f1c41999c5644e429e7a75ed1433b26,
         type: 3}
       propertyPath: answerButtons.Array.data[1]
       value: 
-      objectReference: {fileID: 1533158779}
+      objectReference: {fileID: 0}
     - target: {fileID: 1747057536924946104, guid: 4f1c41999c5644e429e7a75ed1433b26,
         type: 3}
       propertyPath: answerButtons.Array.data[2]
       value: 
-      objectReference: {fileID: 1790086396}
+      objectReference: {fileID: 0}
     - target: {fileID: 4603632989492900923, guid: 4f1c41999c5644e429e7a75ed1433b26,
         type: 3}
       propertyPath: m_IsActive
