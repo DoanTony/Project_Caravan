@@ -9,7 +9,7 @@ public class LocalizationManager : ScriptableObject
     #region Private variables
     private bool isReady;
     private string missingTextString = "< Localize text not found! > ";
-    private Dictionary<string, string> localizedText;
+    private SortedDictionary<string, string> localizedText;
     private string[] keys;
     #endregion
 
@@ -17,7 +17,7 @@ public class LocalizationManager : ScriptableObject
 
     public void LoadLocalizedText(string fileName)
     {
-        localizedText = new Dictionary<string, string>();
+        localizedText = new SortedDictionary<string, string>();
         string filePath = Path.Combine(Application.streamingAssetsPath, fileName + ".json");
         if (File.Exists(filePath))
         {
@@ -75,7 +75,7 @@ public class LocalizationManager : ScriptableObject
         return isReady;
     }
 
-    public Dictionary<string,string> GetLocalizedTexts()
+    public SortedDictionary<string,string> GetLocalizedTexts()
     {
         return localizedText;
     }

@@ -20,7 +20,7 @@ public class LocalizationBox : SerializedScriptableObject
     public string characterName = "name";
 
     [Title("List of Dialogues")]
-    public Dictionary<string, string> localizedText = new Dictionary<string, string>();
+    public readonly SortedDictionary<string, string> localizedText = new SortedDictionary<string, string>();
     [Space]
 
     //Next dialogue (optional)
@@ -86,7 +86,7 @@ public class LocalizationBox : SerializedScriptableObject
         }
         lm.LoadEditorKeys(fileName);
         lm.LoadLocalizedText(fileName);
-        localizedText = lm.GetLocalizedTexts();
+        //localizedText = lm.GetLocalizedTexts();
         keys = localizedText.Keys.ToArray();
     }
     [Button(ButtonSizes.Medium, ButtonStyle.CompactBox)]

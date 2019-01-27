@@ -23,45 +23,15 @@ MonoBehaviour:
     SerializationNodes:
     - Name: localizedText
       Entry: 7
-      Data: 0|System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[System.String,
-        mscorlib]], mscorlib
-    - Name: comparer
-      Entry: 7
-      Data: 1|System.Collections.Generic.GenericEqualityComparer`1[[System.String,
-        mscorlib]], mscorlib
-    - Name: 
-      Entry: 8
-      Data: 
+      Data: 0|System.Collections.Generic.SortedDictionary`2[[System.String, mscorlib],[System.String,
+        mscorlib]], System
     - Name: 
       Entry: 12
       Data: 3
     - Name: 
       Entry: 7
-      Data: 
-    - Name: 
-      Entry: 1
-      Data: 2
-    - Name: 
-      Entry: 1
-      Data: "Home is where me heart longs t\u2019 be."
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: 
-      Entry: 1
-      Data: 3
-    - Name: 
-      Entry: 1
-      Data: "What means home t\u2019 ye?"
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
+      Data: System.Collections.Generic.KeyValuePair`2[[System.String, mscorlib],[System.String,
+        mscorlib]], mscorlib
     - Name: 
       Entry: 1
       Data: 1
@@ -73,6 +43,32 @@ MonoBehaviour:
       Entry: 8
       Data: 
     - Name: 
+      Entry: 7
+      Data: System.Collections.Generic.KeyValuePair`2[[System.String, mscorlib],[System.String,
+        mscorlib]], mscorlib
+    - Name: 
+      Entry: 1
+      Data: 2
+    - Name: 
+      Entry: 1
+      Data: "Home is where me heart longs t\u2019 be."
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: System.Collections.Generic.KeyValuePair`2[[System.String, mscorlib],[System.String,
+        mscorlib]], mscorlib
+    - Name: 
+      Entry: 1
+      Data: 3
+    - Name: 
+      Entry: 1
+      Data: "What means home t\u2019 ye?"
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
       Entry: 13
       Data: 
     - Name: 
@@ -80,21 +76,57 @@ MonoBehaviour:
       Data: 
     - Name: answerQuestions
       Entry: 7
-      Data: 2|AnswerQuestionDialogue[], Assembly-CSharp
+      Data: 1|AnswerQuestionDialogue[], Assembly-CSharp
     - Name: 
       Entry: 12
-      Data: 0
+      Data: 3
+    - Name: 
+      Entry: 7
+      Data: AnswerQuestionDialogue, Assembly-CSharp
+    - Name: answer
+      Entry: 6
+      Data: 
+    - Name: nextQueueDialogue
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: AnswerQuestionDialogue, Assembly-CSharp
+    - Name: answer
+      Entry: 6
+      Data: 
+    - Name: nextQueueDialogue
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: AnswerQuestionDialogue, Assembly-CSharp
+    - Name: answer
+      Entry: 6
+      Data: 
+    - Name: nextQueueDialogue
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
     - Name: 
       Entry: 13
       Data: 
     - Name: 
       Entry: 8
       Data: 
-  fileName: interaction
-  characterName: Captain
+  fileName: 
+  characterName: name
   isNextQueue: 0
   nextQueue: {fileID: 0}
   isAnswers: 0
-  isEvent: 1
-  endDialogueEvent: {fileID: 11400000, guid: 5a24887b140422844a4cb16bf34c7e39, type: 2}
-  key: greeting
+  isEvent: 0
+  endDialogueEvent: {fileID: 0}
+  key: 
