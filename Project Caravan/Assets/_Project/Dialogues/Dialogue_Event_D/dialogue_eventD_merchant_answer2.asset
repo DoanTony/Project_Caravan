@@ -10,15 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 432a550dc31ff494a858ff5a57b85895, type: 3}
-  m_Name: dialogue_eventD_merchant_b2
+  m_Name: dialogue_eventD_merchant_answer2
   m_EditorClassIdentifier: 
   serializationData:
     SerializedFormat: 2
     SerializedBytes: 
-    ReferencedUnityObjects:
-    - {fileID: 11400000, guid: a3dad219248864c4ea3929db66498314, type: 2}
-    - {fileID: 11400000, guid: dcadb0e7f35eb9f4ba2a5579bf89777f, type: 2}
-    - {fileID: 11400000, guid: f493bb8bcf144b043a07be20d36b2e13, type: 2}
+    ReferencedUnityObjects: []
     SerializedBytesString: 
     Prefab: {fileID: 0}
     PrefabModificationsReferencedUnityObjects: []
@@ -40,7 +37,7 @@ MonoBehaviour:
       Data: 1
     - Name: 
       Entry: 1
-      Data: '...'
+      Data: An interesting choice...
     - Name: 
       Entry: 8
       Data: 
@@ -55,43 +52,7 @@ MonoBehaviour:
       Data: 1|AnswerQuestionDialogue[], Assembly-CSharp
     - Name: 
       Entry: 12
-      Data: 3
-    - Name: 
-      Entry: 7
-      Data: AnswerQuestionDialogue, Assembly-CSharp
-    - Name: answer
-      Entry: 1
-      Data: Buy eyepatch
-    - Name: nextQueueDialogue
-      Entry: 10
       Data: 0
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: AnswerQuestionDialogue, Assembly-CSharp
-    - Name: answer
-      Entry: 1
-      Data: Buy Fake ID
-    - Name: nextQueueDialogue
-      Entry: 10
-      Data: 1
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: AnswerQuestionDialogue, Assembly-CSharp
-    - Name: answer
-      Entry: 1
-      Data: Conveniently bear sized pants
-    - Name: nextQueueDialogue
-      Entry: 10
-      Data: 2
-    - Name: 
-      Entry: 8
-      Data: 
     - Name: 
       Entry: 13
       Data: 
@@ -100,9 +61,9 @@ MonoBehaviour:
       Data: 
   fileName: 
   characterName: Merchant
-  isNextQueue: 0
-  nextQueue: {fileID: 0}
-  isAnswers: 1
-  isEvent: 0
-  endDialogueEvent: {fileID: 0}
+  isNextQueue: 1
+  nextQueue: {fileID: 11400000, guid: e2896fac788e1174e9833462e0257944, type: 2}
+  isAnswers: 0
+  isEvent: 1
+  endDialogueEvent: {fileID: 11400000, guid: 2c6a72cd22e7a834eb516bc0908bd59a, type: 2}
   key: 
