@@ -62,7 +62,9 @@ public class EventBoxListener : MonoBehaviour
         _myStyle.normal.textColor = Color.yellow;
         _myStyle.fontStyle = FontStyle.Bold;
         _myStyle.fontSize = 14;
+#if UNITY_EDITOR
         Handles.Label(this.transform.position + Vector3.up * 5f, this.name, _myStyle);
+#endif
 
     }
 }

@@ -9,8 +9,8 @@ EditorBuildSettings:
     path: Assets/_Project/_Scenes/Master.unity
     guid: 16c2217e4bbbdd54fbee1d973e1c2172
   - enabled: 1
-    path: Assets/_Project/_Scenes/Staging.unity
-    guid: 1ceb7116f1b33a844925bfa832db2720
+    path: Assets/_Project/_Scenes/Main.unity
+    guid: 70016bf2cdc99d04fb4fe1b702a87d62
   - enabled: 1
     path: Assets/_Project/_Scenes/Sub-Scenes/Audio.unity
     guid: 41fb463877ede3d4581334b4e1df03f0

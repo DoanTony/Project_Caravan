@@ -69,7 +69,9 @@ public class InteractableObject : MonoBehaviour
         _myStyle.normal.textColor = Color.green;
         _myStyle.fontStyle = FontStyle.Bold;
         _myStyle.fontSize = 14;
+#if UNITY_EDITOR
         Handles.Label(this.transform.position + Vector3.up * 4f, this.name, _myStyle);
+#endif
     }
 
 

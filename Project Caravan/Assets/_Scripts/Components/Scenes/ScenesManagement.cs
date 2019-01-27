@@ -5,6 +5,11 @@ using UnityEngine.SceneManagement;
 
 public class ScenesManagement : MonoBehaviour
 {
+     private void Awake()
+    {
+        LoadScene("Outdoor1");
+    }
+
     public void LoadScene(string _sceneName)
     {
         for (int i = 0; i < 4; i++)
