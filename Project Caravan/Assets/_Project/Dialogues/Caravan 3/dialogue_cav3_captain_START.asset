@@ -1,0 +1,145 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 432a550dc31ff494a858ff5a57b85895, type: 3}
+  m_Name: dialogue_cav3_captain_START
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: localizedText
+      Entry: 7
+      Data: 0|System.Collections.Generic.SortedDictionary`2[[System.String, mscorlib],[System.String,
+        mscorlib]], System
+    - Name: 
+      Entry: 12
+      Data: 4
+    - Name: 
+      Entry: 7
+      Data: System.Collections.Generic.KeyValuePair`2[[System.String, mscorlib],[System.String,
+        mscorlib]], mscorlib
+    - Name: 
+      Entry: 1
+      Data: 1
+    - Name: 
+      Entry: 1
+      Data: That squiffy bear ye dragged aboard made fun of me pantaloons!
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: System.Collections.Generic.KeyValuePair`2[[System.String, mscorlib],[System.String,
+        mscorlib]], mscorlib
+    - Name: 
+      Entry: 1
+      Data: 2
+    - Name: 
+      Entry: 1
+      Data: "Blistering barnacles!! He ain\u2019t even wearin\u2019 anythin\u2019...
+        ARRR "
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: System.Collections.Generic.KeyValuePair`2[[System.String, mscorlib],[System.String,
+        mscorlib]], mscorlib
+    - Name: 
+      Entry: 1
+      Data: 3
+    - Name: 
+      Entry: 1
+      Data: "The Bare Knight don\u2019t need a sword.. His face be deadlier! HARHARHAR"
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: System.Collections.Generic.KeyValuePair`2[[System.String, mscorlib],[System.String,
+        mscorlib]], mscorlib
+    - Name: 
+      Entry: 1
+      Data: 4
+    - Name: 
+      Entry: 1
+      Data: Will ye tell him I said that?
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: answerQuestions
+      Entry: 7
+      Data: 1|AnswerQuestionDialogue[], Assembly-CSharp
+    - Name: 
+      Entry: 12
+      Data: 3
+    - Name: 
+      Entry: 7
+      Data: AnswerQuestionDialogue, Assembly-CSharp
+    - Name: answer
+      Entry: 6
+      Data: 
+    - Name: nextQueueDialogue
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: AnswerQuestionDialogue, Assembly-CSharp
+    - Name: answer
+      Entry: 6
+      Data: 
+    - Name: nextQueueDialogue
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: AnswerQuestionDialogue, Assembly-CSharp
+    - Name: answer
+      Entry: 6
+      Data: 
+    - Name: nextQueueDialogue
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+  fileName: 
+  characterName: Captain
+  isNextQueue: 1
+  nextQueue: {fileID: 11400000, guid: 9c64af59b08037e43bcb4327b2bf2652, type: 2}
+  isAnswers: 0
+  isEvent: 0
+  endDialogueEvent: {fileID: 0}
+  key: 
