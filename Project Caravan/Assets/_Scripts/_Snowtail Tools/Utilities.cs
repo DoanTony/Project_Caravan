@@ -82,13 +82,11 @@ namespace SnowtailTools
                     return false;
                 }
             }
-
-          
         }
 
         public class Validation
         {
-            public static bool ValidateField<T>(T _target, string _message, GameObject _context) {
+            public static bool ValidateField<T>(T _target, string _message, GameObject _context = null) {
                 if (_target == null)
                 {
                     Debug.LogError("<b><color=red>" + _message.ToUpper() + "</color></b>", _context);

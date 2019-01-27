@@ -26,4 +26,10 @@ public abstract class GameEvent : ScriptableObject
             listeners.Remove(_listener);
         }
     }
+
+
+    public void OnDisable()
+    {
+        listeners.Clear();
+    }
 }
