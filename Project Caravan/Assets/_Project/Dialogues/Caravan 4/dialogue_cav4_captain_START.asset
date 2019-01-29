@@ -37,8 +37,7 @@ MonoBehaviour:
       Data: 1
     - Name: 
       Entry: 1
-      Data: "That wee boy claims t\u2019 \u2018ave magic powers but he won\u2019t
-        prove it."
+      Data: "That wee lass claims to have magic powers but she won\u2019t prove it."
     - Name: 
       Entry: 8
       Data: 
@@ -51,7 +50,7 @@ MonoBehaviour:
       Data: 2
     - Name: 
       Entry: 1
-      Data: "He be too young t\u2019 travel alone."
+      Data: "She be too young t\u2019 travel alone."
     - Name: 
       Entry: 8
       Data: 
@@ -64,7 +63,7 @@ MonoBehaviour:
       Data: 3
     - Name: 
       Entry: 1
-      Data: I wonder where his elders be..
+      Data: I wonder where her parents be..
     - Name: 
       Entry: 8
       Data: 

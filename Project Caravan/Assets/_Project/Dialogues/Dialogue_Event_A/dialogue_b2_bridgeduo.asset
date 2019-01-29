@@ -27,7 +27,7 @@ MonoBehaviour:
         mscorlib]], System
     - Name: 
       Entry: 12
-      Data: 2
+      Data: 4
     - Name: 
       Entry: 7
       Data: System.Collections.Generic.KeyValuePair`2[[System.String, mscorlib],[System.String,
@@ -37,7 +37,7 @@ MonoBehaviour:
       Data: 1
     - Name: 
       Entry: 1
-      Data: '*Great idea!'
+      Data: Great idea!
     - Name: 
       Entry: 8
       Data: 
@@ -50,8 +50,34 @@ MonoBehaviour:
       Data: 2
     - Name: 
       Entry: 1
-      Data: "*Who\u2019s the idiot who tried talking his way out of paying the bridge
+      Data: "Who\u2019s the idiot who tried talking his way out of paying the bridge
         toll?"
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: System.Collections.Generic.KeyValuePair`2[[System.String, mscorlib],[System.String,
+        mscorlib]], mscorlib
+    - Name: 
+      Entry: 1
+      Data: 3
+    - Name: 
+      Entry: 1
+      Data: That'll be 300...
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: System.Collections.Generic.KeyValuePair`2[[System.String, mscorlib],[System.String,
+        mscorlib]], mscorlib
+    - Name: 
+      Entry: 1
+      Data: 4
+    - Name: 
+      Entry: 1
+      Data: Cash only.
     - Name: 
       Entry: 8
       Data: 
@@ -110,7 +136,7 @@ MonoBehaviour:
       Entry: 8
       Data: 
   fileName: 
-  characterName: BridgeKeeper Duo
+  characterName: The Toll Men
   isNextQueue: 0
   nextQueue: {fileID: 0}
   isAnswers: 0

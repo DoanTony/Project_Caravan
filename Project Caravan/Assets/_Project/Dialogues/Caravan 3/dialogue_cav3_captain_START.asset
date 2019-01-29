@@ -37,7 +37,7 @@ MonoBehaviour:
       Data: 1
     - Name: 
       Entry: 1
-      Data: That squiffy bear ye dragged aboard made fun of me pantaloons!
+      Data: That damned animal ye dragged aboard made fun of me pantaloons!
     - Name: 
       Entry: 8
       Data: 
@@ -50,8 +50,7 @@ MonoBehaviour:
       Data: 2
     - Name: 
       Entry: 1
-      Data: "Blistering barnacles!! He ain\u2019t even wearin\u2019 anythin\u2019...
-        ARRR "
+      Data: "He ain\u2019t even wearin\u2019 any...arrr"
     - Name: 
       Entry: 8
       Data: 
@@ -64,7 +63,7 @@ MonoBehaviour:
       Data: 3
     - Name: 
       Entry: 1
-      Data: "The Bare Knight don\u2019t need a sword.. His face be deadlier! HARHARHAR"
+      Data: "He don\u2019t need a sword...his stench be deadlier! HARHARHAR!"
     - Name: 
       Entry: 8
       Data: 
@@ -77,7 +76,7 @@ MonoBehaviour:
       Data: 4
     - Name: 
       Entry: 1
-      Data: Will ye tell him I said that?
+      Data: Don't tell him I said that.
     - Name: 
       Entry: 8
       Data: 

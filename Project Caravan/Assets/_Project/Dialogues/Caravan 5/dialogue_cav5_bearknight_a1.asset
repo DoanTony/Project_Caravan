@@ -27,7 +27,7 @@ MonoBehaviour:
         mscorlib]], System
     - Name: 
       Entry: 12
-      Data: 4
+      Data: 3
     - Name: 
       Entry: 7
       Data: System.Collections.Generic.KeyValuePair`2[[System.String, mscorlib],[System.String,
@@ -37,7 +37,7 @@ MonoBehaviour:
       Data: 1
     - Name: 
       Entry: 1
-      Data: We shall soon part ways.  I hope thou shall continue to fight for those
+      Data: We shall soon part ways. I hope thou shall continue to fight for those
         whom need help once thou art home.
     - Name: 
       Entry: 8
@@ -51,8 +51,7 @@ MonoBehaviour:
       Data: 2
     - Name: 
       Entry: 1
-      Data: 'E''en when we are truly home, one should not allow oneself to be too
-        comfortable. '
+      Data: 'Even at home, one should not become too comfortable. '
     - Name: 
       Entry: 8
       Data: 
@@ -65,21 +64,8 @@ MonoBehaviour:
       Data: 3
     - Name: 
       Entry: 1
-      Data: ' Haply that is the reason I choose to present myself this way. That we
-        all can feel just a little bit uncomfortable. '
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: System.Collections.Generic.KeyValuePair`2[[System.String, mscorlib],[System.String,
-        mscorlib]], mscorlib
-    - Name: 
-      Entry: 1
-      Data: 4
-    - Name: 
-      Entry: 1
-      Data: Are thou sure thou wishes to go home dressed like that?
+      Data: 'That is the reason I choose to present myself this way. That we all can
+        feel just a little bit uncomfortable. '
     - Name: 
       Entry: 8
       Data: 

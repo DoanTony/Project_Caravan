@@ -40,7 +40,7 @@ MonoBehaviour:
       Data: 1
     - Name: 
       Entry: 1
-      Data: "Now why would i threaten such a tasty traveller\u2026"
+      Data: Now why would i threaten a fellow traveller?
     - Name: 
       Entry: 8
       Data: 
@@ -53,7 +53,7 @@ MonoBehaviour:
       Data: 2
     - Name: 
       Entry: 1
-      Data: Buy something.
+      Data: Buy something now.
     - Name: 
       Entry: 8
       Data: 

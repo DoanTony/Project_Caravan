@@ -64,8 +64,8 @@ MonoBehaviour:
       Data: 3
     - Name: 
       Entry: 1
-      Data: I'm more scared of the parrot on me shoulder than ye, ye feculent, mangy
-        swindler! ...
+      Data: 'I''m more scared of the parrot on me shoulder than ye, ye feculent, mangy
+        swindler! '
     - Name: 
       Entry: 8
       Data: 
@@ -78,7 +78,7 @@ MonoBehaviour:
       Data: 4
     - Name: 
       Entry: 1
-      Data: '''n i dont even ''ave a parrot! HARHARHAR!!'
+      Data: '''n i dont even have a parrot! HARHARHAR!!'
     - Name: 
       Entry: 8
       Data: 

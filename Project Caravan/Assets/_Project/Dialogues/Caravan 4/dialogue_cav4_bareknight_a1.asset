@@ -27,7 +27,7 @@ MonoBehaviour:
         mscorlib]], System
     - Name: 
       Entry: 12
-      Data: 3
+      Data: 1
     - Name: 
       Entry: 7
       Data: System.Collections.Generic.KeyValuePair`2[[System.String, mscorlib],[System.String,
@@ -37,34 +37,7 @@ MonoBehaviour:
       Data: 1
     - Name: 
       Entry: 1
-      Data: "What\u2019s this I hark about bandits?"
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: System.Collections.Generic.KeyValuePair`2[[System.String, mscorlib],[System.String,
-        mscorlib]], mscorlib
-    - Name: 
-      Entry: 1
-      Data: 2
-    - Name: 
-      Entry: 1
-      Data: All this ruckus reminds me of the time i defeated the knaves of blacksheep
-        cave.  There i stood  'i  victory. Pant-less
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: System.Collections.Generic.KeyValuePair`2[[System.String, mscorlib],[System.String,
-        mscorlib]], mscorlib
-    - Name: 
-      Entry: 1
-      Data: 3
-    - Name: 
-      Entry: 1
-      Data: The little one you saved from the bandit discourses in strange tongues.
+      Data: "What\u2019s this I hear about bandits?"
     - Name: 
       Entry: 8
       Data: 

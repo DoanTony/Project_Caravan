@@ -37,7 +37,7 @@ MonoBehaviour:
       Data: 1
     - Name: 
       Entry: 1
-      Data: "Quite a crew we be gatherin\u2019 here eh laddie? \u2026  YARR!!!"
+      Data: "Quite a crew we be gatherin\u2019 here eh?"
     - Name: 
       Entry: 8
       Data: 
@@ -50,7 +50,7 @@ MonoBehaviour:
       Data: 2
     - Name: 
       Entry: 1
-      Data: "Yer nigh-on home laddie. Won\u2019t be long now."
+      Data: "Yer almost home laddie. Won\u2019t be long now."
     - Name: 
       Entry: 8
       Data: 
