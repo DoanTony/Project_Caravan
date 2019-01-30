@@ -39,7 +39,7 @@ MonoBehaviour:
       Data: 1
     - Name: 
       Entry: 1
-      Data: By your leave kind travelers.  Wouldst thou spare some gold for a starving
+      Data: By your leave kind traveler. Wouldst thou spare some gold for a starving
         beggar?
     - Name: 
       Entry: 8
@@ -74,7 +74,7 @@ MonoBehaviour:
       Data: AnswerQuestionDialogue, Assembly-CSharp
     - Name: answer
       Entry: 1
-      Data: Here.. have some gold
+      Data: Here...have some gold
     - Name: nextQueueDialogue
       Entry: 10
       Data: 0

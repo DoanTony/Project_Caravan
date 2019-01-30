@@ -39,7 +39,7 @@ MonoBehaviour:
       Data: 1
     - Name: 
       Entry: 1
-      Data: '*STOP RIGHT THERE!!You need to pay us if you want to pass..'
+      Data: STOP RIGHT THERE! You need to pay us if you want to pass...
     - Name: 
       Entry: 8
       Data: 
@@ -52,7 +52,7 @@ MonoBehaviour:
       Data: 2
     - Name: 
       Entry: 1
-      Data: "*and don\u2019t even THINK about jumping over Us like the last guy, because
+      Data: "and don\u2019t even THINK about jumping over us like the last guy because
         this time...IT\u2019S NOT GONNA WORK!"
     - Name: 
       Entry: 8
@@ -112,7 +112,7 @@ MonoBehaviour:
       Entry: 8
       Data: 
   fileName: 
-  characterName: BridgeKeeper Duo
+  characterName: The Toll Men
   isNextQueue: 0
   nextQueue: {fileID: 0}
   isAnswers: 1

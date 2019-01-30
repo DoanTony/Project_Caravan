@@ -39,7 +39,7 @@ MonoBehaviour:
       Data: 1
     - Name: 
       Entry: 1
-      Data: 'ENOUGH!! '
+      Data: ENOUGH!
     - Name: 
       Entry: 8
       Data: 
@@ -85,7 +85,7 @@ MonoBehaviour:
       Data: AnswerQuestionDialogue, Assembly-CSharp
     - Name: answer
       Entry: 1
-      Data: "I don\u2019t think the Bare Knight would be too happy about that"
+      Data: "I don\u2019t think the Bare Knight would be too happy about that."
     - Name: nextQueueDialogue
       Entry: 10
       Data: 1

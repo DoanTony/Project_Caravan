@@ -37,7 +37,7 @@ MonoBehaviour:
       Data: 1
     - Name: 
       Entry: 1
-      Data: That darn bridge toll be too expensive! ..Yarr..
+      Data: That darn bridge toll be too expensive! ...yarr...
     - Name: 
       Entry: 8
       Data: 
@@ -50,8 +50,7 @@ MonoBehaviour:
       Data: 2
     - Name: 
       Entry: 1
-      Data: I still can nah believe scallywags would try to cross the bridge without
-        paying..
+      Data: I'd never think of cheatin' those toll men though.
     - Name: 
       Entry: 8
       Data: 
@@ -64,7 +63,7 @@ MonoBehaviour:
       Data: 3
     - Name: 
       Entry: 1
-      Data: 'A pirate would never do such a thing! '
+      Data: 'A good pirate would never do such a thing! '
     - Name: 
       Entry: 8
       Data: 
@@ -77,7 +76,7 @@ MonoBehaviour:
       Data: 4
     - Name: 
       Entry: 1
-      Data: Did I ever tell ye the story of how I slayed the Kraken?
+      Data: By the way, did I ever tell ye the story of how I slayed the Kraken?
     - Name: 
       Entry: 8
       Data: 
@@ -90,7 +89,7 @@ MonoBehaviour:
       Data: 5
     - Name: 
       Entry: 1
-      Data: "I\u2019ll tell it to ye if it ever happens\u2026 HARHARHAR"
+      Data: "I\u2019ll tell it to ye if it ever happens\u2026HARHARHAR"
     - Name: 
       Entry: 8
       Data: 

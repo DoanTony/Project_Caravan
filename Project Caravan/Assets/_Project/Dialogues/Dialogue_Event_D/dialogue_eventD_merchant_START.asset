@@ -52,7 +52,7 @@ MonoBehaviour:
       Data: 2
     - Name: 
       Entry: 1
-      Data: "You must be very desperate.. Yes\u2026."
+      Data: You must be very desperate...yes?
     - Name: 
       Entry: 8
       Data: 
@@ -65,8 +65,8 @@ MonoBehaviour:
       Data: 3
     - Name: 
       Entry: 1
-      Data: 'All alone on this empty path.. You should probably purchase something..just
-        in case.. '
+      Data: All alone on this dire road...you should probably purchase something...just
+        in case...
     - Name: 
       Entry: 8
       Data: 

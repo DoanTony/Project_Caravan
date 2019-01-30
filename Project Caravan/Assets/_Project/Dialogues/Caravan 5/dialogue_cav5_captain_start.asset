@@ -37,7 +37,7 @@ MonoBehaviour:
       Data: 1
     - Name: 
       Entry: 1
-      Data: 'An eye-patch?? Fer me?! '
+      Data: 'An eye-patch? Fer me?! '
     - Name: 
       Entry: 8
       Data: 
@@ -50,7 +50,7 @@ MonoBehaviour:
       Data: 2
     - Name: 
       Entry: 1
-      Data: "Ye shouldn\u2019t \u2018ave.. You\u2019ve brought a tear t\u2019 me eye!"
+      Data: "Ye shouldn\u2019t have.. You\u2019ve brought a tear t\u2019 me eye!"
     - Name: 
       Entry: 8
       Data: 

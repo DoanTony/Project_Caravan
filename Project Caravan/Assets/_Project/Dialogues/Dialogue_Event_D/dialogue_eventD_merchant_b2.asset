@@ -85,7 +85,7 @@ MonoBehaviour:
       Data: AnswerQuestionDialogue, Assembly-CSharp
     - Name: answer
       Entry: 1
-      Data: Conveniently bear sized pants
+      Data: Conveniently bear-sized pants
     - Name: nextQueueDialogue
       Entry: 10
       Data: 2

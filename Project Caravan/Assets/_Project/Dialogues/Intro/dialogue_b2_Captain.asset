@@ -39,7 +39,7 @@ MonoBehaviour:
       Data: 1
     - Name: 
       Entry: 1
-      Data: Aye, it must be hard bein far from yer loved ones fer so long,
+      Data: Aye, it must be hard bein far from yer loved ones fer so long.
     - Name: 
       Entry: 8
       Data: 
@@ -65,7 +65,7 @@ MonoBehaviour:
       Data: 3
     - Name: 
       Entry: 1
-      Data: 'back on land that we forget about th'' ones right in front o'' us.. '
+      Data: 'back on land that we forget about the ones right in front of us.. '
     - Name: 
       Entry: 8
       Data: 

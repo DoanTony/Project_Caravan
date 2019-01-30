@@ -37,7 +37,7 @@ MonoBehaviour:
       Data: 1
     - Name: 
       Entry: 1
-      Data: "Enough!! \u2026 Only a real pirate could talk like that.."
+      Data: That was an unnecessarily long insult...
     - Name: 
       Entry: 8
       Data: 
@@ -50,7 +50,7 @@ MonoBehaviour:
       Data: 2
     - Name: 
       Entry: 1
-      Data: And the only thing deadlier than a bandit is a pirate!
+      Data: 'You must be a real pirate!  '
     - Name: 
       Entry: 8
       Data: 
@@ -63,7 +63,7 @@ MonoBehaviour:
       Data: 3
     - Name: 
       Entry: 1
-      Data: "I\u2019m outta here!"
+      Data: "I\u2019m outta here! You can keep the twerp."
     - Name: 
       Entry: 8
       Data: 

@@ -27,7 +27,7 @@ MonoBehaviour:
         mscorlib]], System
     - Name: 
       Entry: 12
-      Data: 3
+      Data: 4
     - Name: 
       Entry: 7
       Data: System.Collections.Generic.KeyValuePair`2[[System.String, mscorlib],[System.String,
@@ -37,8 +37,7 @@ MonoBehaviour:
       Data: 1
     - Name: 
       Entry: 1
-      Data: Thanks for saving me back there. I really did NOT want to turn that guy
-        into a frog.
+      Data: Thanks for showing up. I really did NOT want to turn that guy into a frog.
     - Name: 
       Entry: 8
       Data: 
@@ -51,8 +50,7 @@ MonoBehaviour:
       Data: 2
     - Name: 
       Entry: 1
-      Data: "Every wizard is born with a special power. I can polymorph people into
-        frogs..  That\u2019s how I found out about my fear of frogs."
+      Data: Every witch is born with a special power. I can turn people into frogs
     - Name: 
       Entry: 8
       Data: 
@@ -65,8 +63,21 @@ MonoBehaviour:
       Data: 3
     - Name: 
       Entry: 1
-      Data: "I\u2019m a wizard by the way.. But every wizarding school rejects me
-        because they say i\u2019m too young.. Haters gonna hate though amirite?"
+      Data: "...That\u2019s how I found out about my fear of frogs."
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: System.Collections.Generic.KeyValuePair`2[[System.String, mscorlib],[System.String,
+        mscorlib]], mscorlib
+    - Name: 
+      Entry: 1
+      Data: 4
+    - Name: 
+      Entry: 1
+      Data: "Every witchraft school rejects me because they say I\u2019m too young..
+        Haters gonna hate though amirite?"
     - Name: 
       Entry: 8
       Data: 
