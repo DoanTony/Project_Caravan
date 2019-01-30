@@ -31,7 +31,7 @@ public class InteractionSystem : ComponentSystem
     {
         LayerMask layerMask = 1 << GlobalVariables.INTERACTABLE_LAYER;
         RaycastHit hit;
-        Ray ray = new Ray(_Characters.Transform[index].position, _Characters.Interaction[index].forward);
+        Ray ray = new Ray(_Characters.Transform[index].position + (_Characters.Interaction[index].forward.normalized * -1.5f), _Characters.Interaction[index].forward);
         if (Physics.Raycast(ray, out hit, _Characters.Interaction[index].range, layerMask))
         {
             _Characters.Interaction[index].interactable = hit.transform.GetComponent<InteractableObject>().GetInteractable();

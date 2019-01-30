@@ -184,11 +184,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3005576555117296620, guid: 169380599b5a107488fa5a2d8faf5a7c,
-        type: 3}
-      propertyPath: simpleInteractable.response.m_PersistentCalls.m_Calls.Array.size
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5823683030676635965, guid: 169380599b5a107488fa5a2d8faf5a7c,
         type: 3}
       propertyPath: m_LocalPosition.y
@@ -202,7 +197,12 @@ PrefabInstance:
     - target: {fileID: 6438213299601883722, guid: 169380599b5a107488fa5a2d8faf5a7c,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3005576555117296620, guid: 169380599b5a107488fa5a2d8faf5a7c,
+        type: 3}
+      propertyPath: simpleInteractable.response.m_PersistentCalls.m_Calls.Array.size
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 169380599b5a107488fa5a2d8faf5a7c, type: 3}

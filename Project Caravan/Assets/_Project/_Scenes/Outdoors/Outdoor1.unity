@@ -185,5 +185,46 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: 0.86
       objectReference: {fileID: 0}
+    - target: {fileID: 3005576555117296620, guid: a86f70ccc87662143a74a29e477ef6a4,
+        type: 3}
+      propertyPath: simpleInteractable.response.m_PersistentCalls.m_Calls.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3005576555117296620, guid: a86f70ccc87662143a74a29e477ef6a4,
+        type: 3}
+      propertyPath: simpleInteractable.response.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3005576555117296620, guid: a86f70ccc87662143a74a29e477ef6a4,
+        type: 3}
+      propertyPath: simpleInteractable.response.m_PersistentCalls.m_Calls.Array.data[2].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3005576555117296620, guid: a86f70ccc87662143a74a29e477ef6a4,
+        type: 3}
+      propertyPath: simpleInteractable.response.m_PersistentCalls.m_Calls.Array.data[3].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3005576555117296620, guid: a86f70ccc87662143a74a29e477ef6a4,
+        type: 3}
+      propertyPath: simpleInteractable.response.m_PersistentCalls.m_Calls.Array.data[3].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3005576555117296620, guid: a86f70ccc87662143a74a29e477ef6a4,
+        type: 3}
+      propertyPath: simpleInteractable.response.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 11400000, guid: 3a3076c48a52e3a4aade474e80bb43f8,
+        type: 2}
+    - target: {fileID: 3005576555117296620, guid: a86f70ccc87662143a74a29e477ef6a4,
+        type: 3}
+      propertyPath: simpleInteractable.response.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: Raise
+      objectReference: {fileID: 0}
+    - target: {fileID: 3005576555117296620, guid: a86f70ccc87662143a74a29e477ef6a4,
+        type: 3}
+      propertyPath: simpleInteractable.response.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a86f70ccc87662143a74a29e477ef6a4, type: 3}

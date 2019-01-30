@@ -25,6 +25,7 @@ public class LocalizedText : SerializedMonoBehaviour
     private LocalizationBox nextDialogue;
     private LocalizationBox currentDialogue;
     private AnswerQuestionDialogue[] answerQuestionDialogues;
+    private bool canAnswer = false;
 
     private void Awake()
     {
@@ -155,11 +156,15 @@ public class LocalizedText : SerializedMonoBehaviour
 
     public void AnswerQuestion(int _index)
     {
-        if (currentDialogue.endDialogueEvent != null)
+        if (canAnswer)
         {
-            currentDialogue.endDialogueEvent.Raise();
+            if (currentDialogue.endDialogueEvent != null)
+            {
+                currentDialogue.endDialogueEvent.Raise();
+            }
+            canAnswer = false;
+            InitDialogue(answerQuestionDialogues[_index].nextQueueDialogue);
         }
-        InitDialogue(answerQuestionDialogues[_index].nextQueueDialogue);
     }
 
     private void EnableButtons(AnswerQuestionDialogue[] _answerQuestionDialogues)
@@ -170,6 +175,7 @@ public class LocalizedText : SerializedMonoBehaviour
             {
                 answerButtons[i].SetActive(true);
                 answerButtons[i].GetComponentInChildren<Text>().text = answerQuestionDialogues[i].answer;
+                StartCoroutine(AllowAnsweringDelay());
             }
         }
     }
@@ -180,5 +186,11 @@ public class LocalizedText : SerializedMonoBehaviour
         {
             answerButtons[i].SetActive(false);
         }
+    }
+
+    private IEnumerator AllowAnsweringDelay()
+    {
+        yield return new WaitForSeconds(1.0f);
+        canAnswer = true;
     }
 }
