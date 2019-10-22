@@ -10,12 +10,6 @@ public class CharacterController : MonoBehaviour
     [ReadOnly]
     public float horiziontal;
 
-    private void Awake()
-    {
-        Cursor.lockState = CursorLockMode.Locked;
-        Cursor.visible = false;
-    }
-
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.Escape))
