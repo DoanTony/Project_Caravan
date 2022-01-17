@@ -4,43 +4,37 @@ using SnowtailTools;
 
 public class InteractionSystem : ComponentSystem
 {
-    struct Characters
-    {
-        public readonly int Length;
-        public ComponentArray<InteractionComponent> Interaction;
-        public ComponentArray<Character> Character;
-        public ComponentArray<Transform> Transform;
-    }
-
-    [Inject] Characters _Characters;
-
     protected override void OnUpdate()
     {
-        for (int i = 0; i < _Characters.Length; i++)
+        Entities.ForEach((Character entity, InteractionComponent interaction, Transform transform) =>
         {
-            ScanForInteractable(i);
+            ScanForInteractable(interaction, transform);
 
-            if (_Characters.Interaction[i].interactable != null)
+            if (interaction.interactable != null && entity.GetComponent<CharacterController>().IsActive && Input.GetKeyDown(KeyCode.Space))
             {
-                _Characters.Interaction[i].interactable.Interact();
+                interaction.interactable.Interact();
+                interaction.interactable.Execute();
+
             }
-        }
+
+        });
     }
 
-    private void ScanForInteractable(int index)
+    private void ScanForInteractable(InteractionComponent interaction, Transform transform)
     {
         LayerMask layerMask = 1 << GlobalVariables.INTERACTABLE_LAYER;
         RaycastHit hit;
-        Ray ray = new Ray(_Characters.Transform[index].position + (_Characters.Interaction[index].forward.normalized * -1.5f), _Characters.Interaction[index].forward);
-        if (Physics.Raycast(ray, out hit, _Characters.Interaction[index].range, layerMask))
+        Ray ray = new Ray(transform.position + (interaction.forward.normalized * -1.5f), interaction.forward);
+        Debug.DrawRay(transform.position, ray.direction * interaction.range, Color.green);
+        if (Physics.Raycast(ray, out hit, interaction.range, layerMask))
         {
-            _Characters.Interaction[index].interactable = hit.transform.GetComponent<InteractableObject>().GetInteractable();
-            _Characters.Interaction[index].interactableInRange = true;
+            interaction.interactable = hit.transform.GetComponent<InteractableObject>().GetInteractable();
+            interaction.interactableInRange = true;
         }
         else
         {
-            _Characters.Interaction[index].interactable = null;
-            _Characters.Interaction[index].interactableInRange = false;
+            interaction.interactable = null;
+            interaction.interactableInRange = false;
         }
 
     }

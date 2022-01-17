@@ -4,37 +4,28 @@ using Unity.Entities;
 
 public class OritentationControllerSystem : ComponentSystem
 {
-    struct Characters
-    {
-        public readonly int Length;
-        public ComponentArray<SpriteController> SpriteController;
-        public ComponentArray<CharacterController> CharacterController;
-        public ComponentArray<InteractionComponent> InteractionController;
-    }
-
-    [Inject] Characters CharactersData;
-
     protected override void OnUpdate()
     {
-        for (int i = 0; i < CharactersData.Length; i++)
+        Entities.ForEach((CharacterController controller, SpriteController spriteController, InteractionComponent interaction) =>
         {
-            if (!CharactersData.SpriteController[i].spriteRenderer)
+            if (!spriteController.spriteRenderer)
                 return;
 
-            if (CharactersData.CharacterController[i].horiziontal == 0)
+            if (controller.horiziontal == 0)
             {
-                break;
+                return;
             }
-            else if (CharactersData.CharacterController[i].horiziontal > 0)
+            else if (controller.horiziontal > 0)
             {
-                CharactersData.SpriteController[i].spriteRenderer.flipX = true;
-                CharactersData.InteractionController[i].flipX = 1;
+                spriteController.spriteRenderer.flipX = true;
+               interaction.flipX = 1;
             }
             else
             {
-                CharactersData.SpriteController[i].spriteRenderer.flipX = false;
-                CharactersData.InteractionController[i].flipX = -1;
+                spriteController.spriteRenderer.flipX = false;
+               interaction.flipX = -1;
             }
-        }
+
+        });
     }
 }

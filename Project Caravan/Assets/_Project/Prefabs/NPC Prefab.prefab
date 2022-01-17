@@ -78,6 +78,7 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -89,6 +90,7 @@ SpriteRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -159,8 +161,6 @@ MonoBehaviour:
   Response:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
 --- !u!1 &2335711475976068898
 GameObject:
   m_ObjectHideFlags: 0
@@ -241,7 +241,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   interactableType: 0
   simpleInteractable:
-    input: {fileID: 11400000, guid: da6c8cf4cb3254949a313efcc868ecea, type: 2}
     response:
       m_PersistentCalls:
         m_Calls:
@@ -267,21 +266,14 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
   toggleInteractable:
-    input: {fileID: 0}
     delayToggle: 1
     onResponse:
       m_PersistentCalls:
         m_Calls: []
-      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
     offResponse:
       m_PersistentCalls:
         m_Calls: []
-      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
     isActive: 0
 --- !u!136 &5960820907311390844
 CapsuleCollider:
@@ -343,7 +335,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   interactableType: 0
   simpleInteractable:
-    input: {fileID: 11400000, guid: da6c8cf4cb3254949a313efcc868ecea, type: 2}
     response:
       m_PersistentCalls:
         m_Calls:
@@ -369,21 +360,14 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
   toggleInteractable:
-    input: {fileID: 0}
     delayToggle: 1
     onResponse:
       m_PersistentCalls:
         m_Calls: []
-      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
     offResponse:
       m_PersistentCalls:
         m_Calls: []
-      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
     isActive: 0
 --- !u!136 &5032684099694428098
 CapsuleCollider:
@@ -445,7 +429,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   interactableType: 0
   simpleInteractable:
-    input: {fileID: 11400000, guid: da6c8cf4cb3254949a313efcc868ecea, type: 2}
     response:
       m_PersistentCalls:
         m_Calls:
@@ -471,21 +454,14 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
   toggleInteractable:
-    input: {fileID: 0}
     delayToggle: 1
     onResponse:
       m_PersistentCalls:
         m_Calls: []
-      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
     offResponse:
       m_PersistentCalls:
         m_Calls: []
-      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
     isActive: 0
 --- !u!136 &8079381009636697231
 CapsuleCollider:
@@ -517,7 +493,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &8223345017620173695
 Transform:
   m_ObjectHideFlags: 0
@@ -559,17 +535,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 5442588766471913518}
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
       - m_Target: {fileID: 6863035261934947610}
         m_MethodName: SetActive
         m_Mode: 6
@@ -581,8 +546,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
 --- !u!1 &7406843150202271432
 GameObject:
   m_ObjectHideFlags: 0
@@ -629,7 +592,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   interactableType: 0
   simpleInteractable:
-    input: {fileID: 11400000, guid: da6c8cf4cb3254949a313efcc868ecea, type: 2}
     response:
       m_PersistentCalls:
         m_Calls:
@@ -644,21 +606,14 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
   toggleInteractable:
-    input: {fileID: 0}
     delayToggle: 1
     onResponse:
       m_PersistentCalls:
         m_Calls: []
-      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
     offResponse:
       m_PersistentCalls:
         m_Calls: []
-      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
     isActive: 0
 --- !u!136 &1225243569240567502
 CapsuleCollider:
@@ -721,8 +676,6 @@ MonoBehaviour:
   Response:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
 --- !u!1 &8853315737661720470
 GameObject:
   m_ObjectHideFlags: 0

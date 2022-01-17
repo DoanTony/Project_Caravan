@@ -50,7 +50,6 @@ public class LocalizationBox : SerializedScriptableObject
     private string LOCALIZATION_MANAGER_STRING = "LocalizationManager";
     #endregion
 
-#if UNITY_EDITOR
 
     #region DEBUGGER
     [Title("Debug")]
@@ -76,7 +75,6 @@ public class LocalizationBox : SerializedScriptableObject
 
     #endregion
 
-    #region FUNCTIONALITIES
     public void FetchLocalizedText()
     {
         if (lm == null)
@@ -112,9 +110,7 @@ public class LocalizationBox : SerializedScriptableObject
             LocalizedText.instance.InitDialogue(this);
         }
     }
-    #endregion
 
-#endif
 
     #region Getters
 

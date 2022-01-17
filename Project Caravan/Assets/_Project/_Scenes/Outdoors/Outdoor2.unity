@@ -44,7 +44,7 @@ RenderSettings:
 LightmapSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 11
-  m_GIWorkflowMode: 0
+  m_GIWorkflowMode: 1
   m_GISettings:
     serializedVersion: 2
     m_BounceScale: 1
@@ -54,7 +54,7 @@ LightmapSettings:
     m_EnableBakedLightmaps: 1
     m_EnableRealtimeLightmaps: 1
   m_LightmapEditorSettings:
-    serializedVersion: 10
+    serializedVersion: 12
     m_Resolution: 2
     m_BakeResolution: 40
     m_AtlasSize: 1024
@@ -62,6 +62,7 @@ LightmapSettings:
     m_AOMaxDistance: 1
     m_CompAOExponent: 1
     m_CompAOExponentDirect: 0
+    m_ExtractAmbientOcclusion: 0
     m_Padding: 2
     m_LightmapParameters: {fileID: 0}
     m_LightmapsBakeMode: 1
@@ -76,10 +77,16 @@ LightmapSettings:
     m_PVRDirectSampleCount: 32
     m_PVRSampleCount: 500
     m_PVRBounces: 2
+    m_PVREnvironmentSampleCount: 500
+    m_PVREnvironmentReferencePointCount: 2048
+    m_PVRFilteringMode: 2
+    m_PVRDenoiserTypeDirect: 0
+    m_PVRDenoiserTypeIndirect: 0
+    m_PVRDenoiserTypeAO: 0
     m_PVRFilterTypeDirect: 0
     m_PVRFilterTypeIndirect: 0
     m_PVRFilterTypeAO: 0
-    m_PVRFilteringMode: 1
+    m_PVREnvironmentMIS: 0
     m_PVRCulling: 1
     m_PVRFilteringGaussRadiusDirect: 1
     m_PVRFilteringGaussRadiusIndirect: 5
@@ -87,8 +94,11 @@ LightmapSettings:
     m_PVRFilteringAtrousPositionSigmaDirect: 0.5
     m_PVRFilteringAtrousPositionSigmaIndirect: 2
     m_PVRFilteringAtrousPositionSigmaAO: 1
-    m_ShowResolutionOverlay: 1
-  m_LightingDataAsset: {fileID: 0}
+    m_ExportTrainingData: 0
+    m_TrainingDataDestination: TrainingData
+    m_LightProbeSampleCountMultiplier: 4
+  m_LightingDataAsset: {fileID: 112000024, guid: dee159176761ea049a7c01f802b444eb,
+    type: 2}
   m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
@@ -119,15 +129,20 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 7535896050481329589, guid: 169380599b5a107488fa5a2d8faf5a7c,
-        type: 3}
-      propertyPath: m_Name
-      value: NPC_BearKnight var (1)
-      objectReference: {fileID: 0}
-    - target: {fileID: 7535896050481329589, guid: 169380599b5a107488fa5a2d8faf5a7c,
+    - target: {fileID: 283293661186218750, guid: 169380599b5a107488fa5a2d8faf5a7c,
         type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3005576555117296620, guid: 169380599b5a107488fa5a2d8faf5a7c,
+        type: 3}
+      propertyPath: simpleInteractable.response.m_PersistentCalls.m_Calls.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4003624799707974494, guid: 169380599b5a107488fa5a2d8faf5a7c,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4003624799707974494, guid: 169380599b5a107488fa5a2d8faf5a7c,
         type: 3}
@@ -146,6 +161,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4003624799707974494, guid: 169380599b5a107488fa5a2d8faf5a7c,
         type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4003624799707974494, guid: 169380599b5a107488fa5a2d8faf5a7c,
+        type: 3}
       propertyPath: m_LocalRotation.x
       value: 0
       objectReference: {fileID: 0}
@@ -158,16 +178,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalRotation.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4003624799707974494, guid: 169380599b5a107488fa5a2d8faf5a7c,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4003624799707974494, guid: 169380599b5a107488fa5a2d8faf5a7c,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4003624799707974494, guid: 169380599b5a107488fa5a2d8faf5a7c,
         type: 3}
@@ -189,19 +199,19 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: 0.78
       objectReference: {fileID: 0}
-    - target: {fileID: 283293661186218750, guid: 169380599b5a107488fa5a2d8faf5a7c,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 6438213299601883722, guid: 169380599b5a107488fa5a2d8faf5a7c,
         type: 3}
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3005576555117296620, guid: 169380599b5a107488fa5a2d8faf5a7c,
+    - target: {fileID: 7535896050481329589, guid: 169380599b5a107488fa5a2d8faf5a7c,
         type: 3}
-      propertyPath: simpleInteractable.response.m_PersistentCalls.m_Calls.Array.size
+      propertyPath: m_Name
+      value: NPC_BearKnight var (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7535896050481329589, guid: 169380599b5a107488fa5a2d8faf5a7c,
+        type: 3}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -225,10 +235,50 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 7535896050481329589, guid: c6e1c03fe3331434f8f96b82627ba6a9,
+    - target: {fileID: 3005576555117296620, guid: c6e1c03fe3331434f8f96b82627ba6a9,
         type: 3}
-      propertyPath: m_Name
-      value: NPC_Beggar var 1
+      propertyPath: simpleInteractable.response.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3005576555117296620, guid: c6e1c03fe3331434f8f96b82627ba6a9,
+        type: 3}
+      propertyPath: simpleInteractable.response.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3005576555117296620, guid: c6e1c03fe3331434f8f96b82627ba6a9,
+        type: 3}
+      propertyPath: simpleInteractable.response.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 2096479580}
+    - target: {fileID: 3005576555117296620, guid: c6e1c03fe3331434f8f96b82627ba6a9,
+        type: 3}
+      propertyPath: simpleInteractable.response.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3005576555117296620, guid: c6e1c03fe3331434f8f96b82627ba6a9,
+        type: 3}
+      propertyPath: simpleInteractable.response.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: InitDialogue
+      objectReference: {fileID: 0}
+    - target: {fileID: 3005576555117296620, guid: c6e1c03fe3331434f8f96b82627ba6a9,
+        type: 3}
+      propertyPath: simpleInteractable.response.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: SetActive
+      objectReference: {fileID: 0}
+    - target: {fileID: 3005576555117296620, guid: c6e1c03fe3331434f8f96b82627ba6a9,
+        type: 3}
+      propertyPath: simpleInteractable.response.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 3005576555117296620, guid: c6e1c03fe3331434f8f96b82627ba6a9,
+        type: 3}
+      propertyPath: simpleInteractable.response.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 4003624799707974494, guid: c6e1c03fe3331434f8f96b82627ba6a9,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4003624799707974494, guid: c6e1c03fe3331434f8f96b82627ba6a9,
         type: 3}
@@ -247,6 +297,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4003624799707974494, guid: c6e1c03fe3331434f8f96b82627ba6a9,
         type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4003624799707974494, guid: c6e1c03fe3331434f8f96b82627ba6a9,
+        type: 3}
       propertyPath: m_LocalRotation.x
       value: 0
       objectReference: {fileID: 0}
@@ -258,16 +313,6 @@ PrefabInstance:
     - target: {fileID: 4003624799707974494, guid: c6e1c03fe3331434f8f96b82627ba6a9,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4003624799707974494, guid: c6e1c03fe3331434f8f96b82627ba6a9,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4003624799707974494, guid: c6e1c03fe3331434f8f96b82627ba6a9,
-        type: 3}
-      propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4003624799707974494, guid: c6e1c03fe3331434f8f96b82627ba6a9,
@@ -285,45 +330,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3005576555117296620, guid: c6e1c03fe3331434f8f96b82627ba6a9,
+    - target: {fileID: 7535896050481329589, guid: c6e1c03fe3331434f8f96b82627ba6a9,
         type: 3}
-      propertyPath: simpleInteractable.response.m_PersistentCalls.m_Calls.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 3005576555117296620, guid: c6e1c03fe3331434f8f96b82627ba6a9,
-        type: 3}
-      propertyPath: simpleInteractable.response.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: InitDialogue
-      objectReference: {fileID: 0}
-    - target: {fileID: 3005576555117296620, guid: c6e1c03fe3331434f8f96b82627ba6a9,
-        type: 3}
-      propertyPath: simpleInteractable.response.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
-    - target: {fileID: 3005576555117296620, guid: c6e1c03fe3331434f8f96b82627ba6a9,
-        type: 3}
-      propertyPath: simpleInteractable.response.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 3005576555117296620, guid: c6e1c03fe3331434f8f96b82627ba6a9,
-        type: 3}
-      propertyPath: simpleInteractable.response.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 3005576555117296620, guid: c6e1c03fe3331434f8f96b82627ba6a9,
-        type: 3}
-      propertyPath: simpleInteractable.response.m_PersistentCalls.m_Calls.Array.data[1].m_Target
-      value: 
-      objectReference: {fileID: 2096479580}
-    - target: {fileID: 3005576555117296620, guid: c6e1c03fe3331434f8f96b82627ba6a9,
-        type: 3}
-      propertyPath: simpleInteractable.response.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: SetActive
-      objectReference: {fileID: 0}
-    - target: {fileID: 3005576555117296620, guid: c6e1c03fe3331434f8f96b82627ba6a9,
-        type: 3}
-      propertyPath: simpleInteractable.response.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
+      propertyPath: m_Name
+      value: NPC_Beggar var 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c6e1c03fe3331434f8f96b82627ba6a9, type: 3}
@@ -378,8 +388,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
 --- !u!114 &1534979794
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -418,8 +426,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
 --- !u!4 &1534979795
 Transform:
   m_ObjectHideFlags: 0

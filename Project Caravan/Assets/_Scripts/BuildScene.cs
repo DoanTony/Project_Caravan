@@ -19,33 +19,23 @@ public class BuildScene : MonoBehaviour
     [SerializeField] private string buildMainScene;
     [SerializeField] private List<string> buildScenes = new List<string>();
     [SerializeField] private bool isMainSceneLoaded;
+
     private void Awake()
     {
-        if (instance == null)
-            instance = this;
-        else if (instance != this)
-            Destroy(gameObject);
-
-        AddScenes();
         StartCoroutine(LoadYourAsyncScene(buildMainScene, LoadSceneMode.Single));
-
     }
 
-    private void OnValidate()
-    {
-        AddScenes();
-    }
-
+    [ContextMenu("Add Scenes")]
     private void AddScenes()
     {
 #if UNITY_EDITOR
-
         buildScenes.Clear();
         buildMainScene = mainScene.name;
         for (int i = 0; i < additiveScenes.Count; i++)
         {
             buildScenes.Add(additiveScenes[i].name);
         }
+
 #endif
     }
 
@@ -72,11 +62,14 @@ public class BuildScene : MonoBehaviour
 
     IEnumerator LoadYourAsyncScene(string _sceneName, LoadSceneMode _mode)
     {
-        AsyncOperation asyncLoad = SceneManager.LoadSceneAsync(_sceneName, _mode);
+        AsyncOperation asyncLoad = SceneManager.LoadSceneAsync(_sceneName, LoadSceneMode.Additive);
+
         for (int i = 0; i < buildScenes.Count; i++)
         {
-            SceneManager.LoadScene(buildScenes[i], LoadSceneMode.Additive);
+            SceneManager.LoadSceneAsync(buildScenes[i], LoadSceneMode.Additive);
+
         }
+
         // Wait until the asynchronous scene fully loads
         while (!asyncLoad.isDone)
         {

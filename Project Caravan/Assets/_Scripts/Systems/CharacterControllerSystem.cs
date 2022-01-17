@@ -4,27 +4,23 @@ using Unity.Entities;
 
 public class CharacterControllerSystem : ComponentSystem
 {
-    struct Characters
-    {
-        public readonly int Length;
-        public ComponentArray<Character> Character;
-        public ComponentArray<CharacterController> Controller;
-        public ComponentArray<Transform> Transform;
-    }
-
-    [Inject] Characters CharactersData;
 
     protected override void OnUpdate()
     {
-        float dt = Time.deltaTime;
-        for (int i = 0; i < CharactersData.Length; i++)
+
+        float dt = Time.DeltaTime;
+
+        Entities.ForEach((Character entity, CharacterController controller, Transform transform) =>
         {
-            if (!CharactersData.Character[i].setting.lockMovements)
+            if (!entity.setting.lockMovements && controller.IsActive)
+            if (!entity.setting.lockMovements && controller.IsActive)
             {
-                HorizontalInput(ref CharactersData.Controller[i].horiziontal);
-                Move(CharactersData.Controller[i], CharactersData.Transform[i], dt);
+                HorizontalInput(ref controller.horiziontal);
+                Move(controller, transform, dt);
             }
-        }
+
+        });
+       
     }
 
     private void HorizontalInput(ref float _horizontal)

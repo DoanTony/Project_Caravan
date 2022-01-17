@@ -3,12 +3,14 @@ using UnityEditor;
 using Sirenix.OdinInspector;
 using Unity.Entities;
 
-[RequireComponent(typeof(GameObjectEntity))]
+[RequireComponent(typeof(ConvertToEntity))]
 public class CharacterController : MonoBehaviour
 {
     public float movementSpeed;
     [ReadOnly]
     public float horiziontal;
+
+    public bool IsActive;
 
     private void Update()
     {
@@ -19,5 +21,10 @@ public class CharacterController : MonoBehaviour
 #endif
             Application.Quit();
         }
+    }
+
+    public void SetActive(bool active)
+    {
+        IsActive = active;
     }
 }

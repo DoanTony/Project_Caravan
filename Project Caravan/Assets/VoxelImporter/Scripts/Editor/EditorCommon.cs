@@ -95,7 +95,7 @@ namespace VoxelImporter
 #if UNITY_2018_1_OR_NEWER
             if (GraphicsSettings.renderPipelineAsset == null)
                 return false;
-            var shader = GraphicsSettings.renderPipelineAsset.GetDefaultShader();
+            var shader = GraphicsSettings.renderPipelineAsset.defaultShader;
             if (shader == Shader.Find("LightweightPipeline/Standard (Physically Based)") ||
                shader == Shader.Find("Lightweight Render Pipeline/Lit"))
                 return true;
@@ -107,7 +107,7 @@ namespace VoxelImporter
 #if UNITY_2018_1_OR_NEWER
             if (GraphicsSettings.renderPipelineAsset == null)
                 return false;
-            var shader = GraphicsSettings.renderPipelineAsset.GetDefaultShader();
+            var shader = GraphicsSettings.renderPipelineAsset.defaultShader;
             if (shader == Shader.Find("HDRenderPipeline/Lit"))
                 return true;
 #endif
@@ -118,7 +118,7 @@ namespace VoxelImporter
 #if UNITY_2018_1_OR_NEWER
             if (GraphicsSettings.renderPipelineAsset != null)
             {
-                var shader = GraphicsSettings.renderPipelineAsset.GetDefaultShader();
+                var shader = GraphicsSettings.renderPipelineAsset.defaultShader;
                 if (shader != null)
                     return shader;
             }

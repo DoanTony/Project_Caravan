@@ -15,6 +15,7 @@ public class EventBoxTrigger : MonoBehaviour
 
     private void InvokeEvent()
     {
+        Debug.Log(transform.name);
         Response.Invoke();
     }
 
@@ -22,7 +23,7 @@ public class EventBoxTrigger : MonoBehaviour
     {
         if (triggerType == TriggerTypes.ON_TRIGGER_ENTER)
         {
-            if (other.CompareTag("Portal"))
+            if (other.CompareTag("Player"))
             {
                 InvokeEvent();
             }
@@ -33,7 +34,7 @@ public class EventBoxTrigger : MonoBehaviour
     {
         if (triggerType == TriggerTypes.ON_TRIGGER_STAY)
         {
-            if (other.CompareTag("Portal"))
+            if (other.CompareTag("Player"))
             {
                     if (Input.GetKeyDown(KeyCode.W)|| Input.GetKeyDown(KeyCode.Space))
                 {

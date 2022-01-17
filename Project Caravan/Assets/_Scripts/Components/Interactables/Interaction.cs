@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using Unity.Entities;
 
-[RequireComponent(typeof(GameObjectEntity))]
+[RequireComponent(typeof(ConvertToEntity))]
 [SerializeField]
 public abstract class Interaction : MonoBehaviour
 {
@@ -15,3 +15,4 @@ public abstract class Interaction : MonoBehaviour
 
     public virtual void OnDrawGizmosSelected() { }
 }
+

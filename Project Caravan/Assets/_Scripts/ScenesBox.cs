@@ -12,7 +12,7 @@ public class ScenesBox : MonoBehaviour {
 
     private void Awake()
     {
-        LoadScenes();
+        StartCoroutine(LoadScenes());
         StartCoroutine(Execute());
     }
 
@@ -22,20 +22,23 @@ public class ScenesBox : MonoBehaviour {
     }
 
     [ContextMenu("Load Scenes")]
-    private void LoadScenes()
+    private IEnumerator LoadScenes()
     {
         if (EditorApplication.isPlaying)
         {
-            return;
+            yield return null;
         }
-        foreach (SceneAsset scene in scenes)
+        else
         {
-            if (scene)
+            foreach (SceneAsset scene in scenes)
             {
-                EditorSceneManager.OpenScene(AssetDatabase.GetAssetPath(scene), OpenSceneMode.Additive);
+                if (scene)
+                {
+                    EditorSceneManager.OpenScene(AssetDatabase.GetAssetPath(scene), OpenSceneMode.Additive);
+                    yield return null;
+                }
             }
         }
-
     }
 
     public IEnumerator Execute()

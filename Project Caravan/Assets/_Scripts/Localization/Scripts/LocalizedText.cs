@@ -122,6 +122,7 @@ public class LocalizedText : SerializedMonoBehaviour
     {
         if (currentDialogue.isEvent)
         {
+            Debug.Log(currentDialogue.name);
             currentDialogue.endDialogueEvent.Raise();
         }
         background.SetActive(false);

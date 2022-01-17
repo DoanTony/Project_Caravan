@@ -44,7 +44,7 @@ RenderSettings:
 LightmapSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 11
-  m_GIWorkflowMode: 0
+  m_GIWorkflowMode: 1
   m_GISettings:
     serializedVersion: 2
     m_BounceScale: 1
@@ -54,7 +54,7 @@ LightmapSettings:
     m_EnableBakedLightmaps: 1
     m_EnableRealtimeLightmaps: 1
   m_LightmapEditorSettings:
-    serializedVersion: 10
+    serializedVersion: 12
     m_Resolution: 2
     m_BakeResolution: 40
     m_AtlasSize: 1024
@@ -62,6 +62,7 @@ LightmapSettings:
     m_AOMaxDistance: 1
     m_CompAOExponent: 1
     m_CompAOExponentDirect: 0
+    m_ExtractAmbientOcclusion: 0
     m_Padding: 2
     m_LightmapParameters: {fileID: 0}
     m_LightmapsBakeMode: 1
@@ -76,10 +77,16 @@ LightmapSettings:
     m_PVRDirectSampleCount: 32
     m_PVRSampleCount: 500
     m_PVRBounces: 2
+    m_PVREnvironmentSampleCount: 500
+    m_PVREnvironmentReferencePointCount: 2048
+    m_PVRFilteringMode: 2
+    m_PVRDenoiserTypeDirect: 0
+    m_PVRDenoiserTypeIndirect: 0
+    m_PVRDenoiserTypeAO: 0
     m_PVRFilterTypeDirect: 0
     m_PVRFilterTypeIndirect: 0
     m_PVRFilterTypeAO: 0
-    m_PVRFilteringMode: 1
+    m_PVREnvironmentMIS: 0
     m_PVRCulling: 1
     m_PVRFilteringGaussRadiusDirect: 1
     m_PVRFilteringGaussRadiusIndirect: 5
@@ -87,8 +94,11 @@ LightmapSettings:
     m_PVRFilteringAtrousPositionSigmaDirect: 0.5
     m_PVRFilteringAtrousPositionSigmaIndirect: 2
     m_PVRFilteringAtrousPositionSigmaAO: 1
-    m_ShowResolutionOverlay: 1
-  m_LightingDataAsset: {fileID: 0}
+    m_ExportTrainingData: 0
+    m_TrainingDataDestination: TrainingData
+    m_LightProbeSampleCountMultiplier: 4
+  m_LightingDataAsset: {fileID: 112000022, guid: dee159176761ea049a7c01f802b444eb,
+    type: 2}
   m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
@@ -171,8 +181,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
 --- !u!114 &124541785
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -200,8 +208,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
 --- !u!1 &337948609
 GameObject:
   m_ObjectHideFlags: 0
@@ -260,8 +266,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
 --- !u!1001 &845737361
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -269,10 +273,15 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1062556646}
     m_Modifications:
-    - target: {fileID: 7535896050481329589, guid: 2a49c2fef5ddda9408b745b4aa165543,
+    - target: {fileID: 283293661186218750, guid: 2a49c2fef5ddda9408b745b4aa165543,
         type: 3}
-      propertyPath: m_Name
-      value: NPC_UnderageWizard var (1)
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4003624799707974494, guid: 2a49c2fef5ddda9408b745b4aa165543,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4003624799707974494, guid: 2a49c2fef5ddda9408b745b4aa165543,
         type: 3}
@@ -291,6 +300,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4003624799707974494, guid: 2a49c2fef5ddda9408b745b4aa165543,
         type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4003624799707974494, guid: 2a49c2fef5ddda9408b745b4aa165543,
+        type: 3}
       propertyPath: m_LocalRotation.x
       value: -0
       objectReference: {fileID: 0}
@@ -303,16 +317,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalRotation.z
       value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4003624799707974494, guid: 2a49c2fef5ddda9408b745b4aa165543,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4003624799707974494, guid: 2a49c2fef5ddda9408b745b4aa165543,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4003624799707974494, guid: 2a49c2fef5ddda9408b745b4aa165543,
         type: 3}
@@ -329,15 +333,15 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 283293661186218750, guid: 2a49c2fef5ddda9408b745b4aa165543,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 6438213299601883722, guid: 2a49c2fef5ddda9408b745b4aa165543,
         type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7535896050481329589, guid: 2a49c2fef5ddda9408b745b4aa165543,
+        type: 3}
+      propertyPath: m_Name
+      value: NPC_UnderageWizard var (1)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2a49c2fef5ddda9408b745b4aa165543, type: 3}
@@ -393,10 +397,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1062556646}
     m_Modifications:
-    - target: {fileID: 7535896050481329589, guid: 12e5e54720149f4408d6fd9e61a862cd,
+    - target: {fileID: 4003624799707974494, guid: 12e5e54720149f4408d6fd9e61a862cd,
         type: 3}
-      propertyPath: m_Name
-      value: NPC_Bandit
+      propertyPath: m_RootOrder
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4003624799707974494, guid: 12e5e54720149f4408d6fd9e61a862cd,
         type: 3}
@@ -415,6 +419,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4003624799707974494, guid: 12e5e54720149f4408d6fd9e61a862cd,
         type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4003624799707974494, guid: 12e5e54720149f4408d6fd9e61a862cd,
+        type: 3}
       propertyPath: m_LocalRotation.x
       value: -0
       objectReference: {fileID: 0}
@@ -427,16 +436,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalRotation.z
       value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4003624799707974494, guid: 12e5e54720149f4408d6fd9e61a862cd,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4003624799707974494, guid: 12e5e54720149f4408d6fd9e61a862cd,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4003624799707974494, guid: 12e5e54720149f4408d6fd9e61a862cd,
         type: 3}
@@ -457,6 +456,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalPosition.y
       value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7535896050481329589, guid: 12e5e54720149f4408d6fd9e61a862cd,
+        type: 3}
+      propertyPath: m_Name
+      value: NPC_Bandit
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 12e5e54720149f4408d6fd9e61a862cd, type: 3}
@@ -530,8 +534,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
 --- !u!1001 &1345356859
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -539,15 +541,15 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1062556646}
     m_Modifications:
-    - target: {fileID: 7535896050481329589, guid: 867769aca25d73e4e8dd70e825447e85,
-        type: 3}
-      propertyPath: m_Name
-      value: NPC_Captain var
-      objectReference: {fileID: 0}
-    - target: {fileID: 7535896050481329589, guid: 867769aca25d73e4e8dd70e825447e85,
+    - target: {fileID: 283293661186218750, guid: 867769aca25d73e4e8dd70e825447e85,
         type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4003624799707974494, guid: 867769aca25d73e4e8dd70e825447e85,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4003624799707974494, guid: 867769aca25d73e4e8dd70e825447e85,
         type: 3}
@@ -566,6 +568,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4003624799707974494, guid: 867769aca25d73e4e8dd70e825447e85,
         type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4003624799707974494, guid: 867769aca25d73e4e8dd70e825447e85,
+        type: 3}
       propertyPath: m_LocalRotation.x
       value: 0
       objectReference: {fileID: 0}
@@ -578,16 +585,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalRotation.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4003624799707974494, guid: 867769aca25d73e4e8dd70e825447e85,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4003624799707974494, guid: 867769aca25d73e4e8dd70e825447e85,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4003624799707974494, guid: 867769aca25d73e4e8dd70e825447e85,
         type: 3}
@@ -604,20 +601,25 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8772107910563219493, guid: 867769aca25d73e4e8dd70e825447e85,
-        type: 3}
-      propertyPath: m_FlipX
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 283293661186218750, guid: 867769aca25d73e4e8dd70e825447e85,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 6438213299601883722, guid: 867769aca25d73e4e8dd70e825447e85,
         type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7535896050481329589, guid: 867769aca25d73e4e8dd70e825447e85,
+        type: 3}
+      propertyPath: m_Name
+      value: NPC_Captain var
+      objectReference: {fileID: 0}
+    - target: {fileID: 7535896050481329589, guid: 867769aca25d73e4e8dd70e825447e85,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8772107910563219493, guid: 867769aca25d73e4e8dd70e825447e85,
+        type: 3}
+      propertyPath: m_FlipX
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 867769aca25d73e4e8dd70e825447e85, type: 3}

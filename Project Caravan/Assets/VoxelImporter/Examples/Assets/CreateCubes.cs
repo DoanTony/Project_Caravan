@@ -20,7 +20,7 @@ namespace VoxelImporter
                 Shader shader = null;
 #if UNITY_2018_1_OR_NEWER
                 if (GraphicsSettings.renderPipelineAsset != null)
-                    shader = GraphicsSettings.renderPipelineAsset.GetDefaultShader();
+                    shader = GraphicsSettings.renderPipelineAsset.defaultShader;
 #endif
                 if (shader == null)
                     shader = Shader.Find("Standard");
